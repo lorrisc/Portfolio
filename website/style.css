@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "LivvicRegular";
+    src: url("assets/fonts/Livvic/Livvic-Regular.ttf");
+}
+@font-face {
+    font-family: "LinuxBiolinum";
+    src: url("assets/fonts/linux-biolinum-g.ttf");
+}
+@font-face {
+    font-family: "LivvicThin";
+    src: url("assets/fonts/Livvic/Livvic-Thin.ttf");
+}
+@font-face {
+    font-family: "BrixtonTC";
+    src: url("assets/fonts/BrixtonTc.otf");
+}
+@font-face {
+    font-family: "CalendasPlus";
+    src: url("assets/fonts/Calendas_Plus.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #0f0f0f;
+    color: white;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/** --------------- FOOTER NAVBAR --------------- **/
+nav {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%, 0%);
+    display: flex;
+    
+    backdrop-filter: blur(10px);
+    border-radius: 90px;
+    background: rgba(120, 120, 120, 0.2);
+    padding: 3px;
+    
+    font-family: LivvicThin;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+nav a {
+    padding: 10px 24px;
+    border-radius: 90px;
+    color: white;
+}
+nav a:nth-child(1){
+    margin-right: 3px;
+}
+nav a:nth-child(2){
+    margin-left: 3px;
+}
+nav a.active{
+    background-color: rgba(120, 120, 120, 0.5);
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+/* font-family: 'Lobster Two', cursive; */
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#carrousel {
+    height: 50vh;
+    overflow-x: scroll;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+#carrousel div {
+    display: flex;
+    justify-content: space-between;
+}
+#carrousel h2 {
+    font-family: "Lobster Two", cursive;
+    font-size: 3.4em;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+#carrousel article{
+    margin: 0 70px;
+    /* transform: scale(0.6); */
+}
+#carrousel article div>p {
+    font-family: "LinuxBiolinum", cursive;
+    color: #939393;
+}
+#carrousel img {
+    height: 450px;
+    border-radius: 8px;
+}
