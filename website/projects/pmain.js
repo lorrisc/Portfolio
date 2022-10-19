@@ -1,8 +1,10 @@
+//*------- NAVBAR BOTTOM
 let aboutButton = document.querySelector("#aboutProjects");
 aboutButton.addEventListener("click", () => {
     window.location.href = "../about/aboutP.html";
 });
 
+//*------- LIST PROJECTS
 let project = [
     {
         title: "TrainTravel",
@@ -34,18 +36,25 @@ let project = [
     },
 ];
 
-// let rectArticles = element.getBoundingClientRect();
-let screenWidth = screen.width;
 let carrousel = document.querySelector("#carrousel");
 let articles = document.querySelectorAll("#carrousel article");
-let appliquesScale = [];
 
-console.log(articles[0]);
-let rectFirstArt = articles[0].getBoundingClientRect();
-articles[0].style.marginLeft = screenWidth - rectFirstArt.width+ "px";
-console.log(rectFirstArt.width);
+let screenWidth = screen.width;
+
+let scaleInformation = [];
+
+
+//*------- MARGIN PREMIER ELEMENT
+let firstArtInfo = articles[0].getBoundingClientRect();
+let firstWidthDemiArticle = firstArtInfo.width / 2;
+articles[0].style.marginLeft = screenWidth - firstArtInfo.width - firstWidthDemiArticle + "px";
+//*------- MARGIN DERNIER ELEMENT
+let lastArtInfo = articles[articles.length-1].getBoundingClientRect();
+let  lastWidthDemiArticle = firstArtInfo.width / 2;
+articles[articles.length-1].style.marginRight = screenWidth -  lastArtInfo.width -  lastWidthDemiArticle + "px";
+
 articles.forEach((element, index) => {
-    let pushValue = appliquesScale.push(1);
+    let pushValue = scaleInformation.push(1);
 });
 var scrollPos = 0;
 carrousel.addEventListener("scroll", () => {
@@ -64,14 +73,13 @@ carrousel.addEventListener("scroll", () => {
         let rectElement = element.getBoundingClientRect();
         if (rectElement.left < (screenWidth - rectElement.width) / 3) {
             // console.log(test);
-            if (appliquesScale[index] > 0.5) {
-                let tableValue = appliquesScale[index] - 0.003;
-                appliquesScale.splice(index, 1, tableValue);
-                element.style.transform = "scale(" + appliquesScale[index] + ")";
+            if (scaleInformation[index] > 0.5) {
+                let tableValue = scaleInformation[index] - 0.003;
+                scaleInformation.splice(index, 1, tableValue);
+                element.style.transform = "scale(" + scaleInformation[index] + ")";
             }
         }
     });
 });
 
-console.log(screen.width);
 //https://codepen.io/lehollandaisvolant/pen/ryrrGx
