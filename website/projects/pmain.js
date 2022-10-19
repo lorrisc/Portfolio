@@ -40,12 +40,16 @@ let carrousel = document.querySelector("#carrousel");
 let articles = document.querySelectorAll("#carrousel article");
 let appliquesScale = [];
 
+console.log(articles[0]);
+let rectFirstArt = articles[0].getBoundingClientRect();
+articles[0].style.marginLeft = screenWidth - rectFirstArt.width+ "px";
+console.log(rectFirstArt.width);
 articles.forEach((element, index) => {
     let pushValue = appliquesScale.push(1);
 });
 var scrollPos = 0;
 carrousel.addEventListener("scroll", () => {
-    console.log(carrousel.getBoundingClientRect())
+    console.log(carrousel.getBoundingClientRect());
     if (carrousel.getBoundingClientRect().left > scrollPos) {
         // document.getElementById("info-box").setAttribute("data-scroll-direction", "UP");
         console.log("up");
