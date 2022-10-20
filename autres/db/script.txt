@@ -1,0 +1,72 @@
+CREATE TABLE project(
+   idproject SERIAL,
+   nameproject VARCHAR(50),
+   dateproject VARCHAR(50),
+   descriptionproject TEXT,
+   PRIMARY KEY(idproject)
+);
+CREATE TABLE roles(
+   idrole SERIAL,
+   namerole VARCHAR(50),
+   PRIMARY KEY(idrole)
+);
+CREATE TABLE techs(
+   idtech SERIAL,
+   nametech VARCHAR(50),
+   PRIMARY KEY(idtech)
+);
+CREATE TABLE roleproject(
+   idproject INTEGER,
+   idrole INTEGER,
+   PRIMARY KEY(idproject, idrole),
+   FOREIGN KEY(idproject) REFERENCES project(idproject),
+   FOREIGN KEY(idrole) REFERENCES roles(idrole)
+);
+CREATE TABLE techproject(
+   idproject INTEGER,
+   idtech INTEGER,
+   PRIMARY KEY(idproject, idtech),
+   FOREIGN KEY(idproject) REFERENCES project(idproject),
+   FOREIGN KEY(idtech) REFERENCES techs(idtech)
+);
+
+insert into roles (namerole)VALUES
+('Designer'),
+('Dev');
+
+insert into techs (nametech)VALUES
+('Html'),
+('Css'),
+('Js'),
+('Figma'),
+('Phaser 3'),
+('C++'),
+('Arduino'),
+('Node.js');
+
+
+insert into project (nameproject,dateproject, descriptionproject)VALUES
+('TrainTravel','Avril 2022','Le projet traintravel est cool' ),
+('TheLegoWar','Oct. 2022','Le projet TheLegoWar est cool' ),
+('MondialMeteo','Juin 2022','Le projet MondialMeteo est cool' ),
+('Transport de sarcophage','Mai 2021','Le projet Transport de sarcophage est cool' );
+
+insert into techproject (idproject,idtech)VALUES
+(1,1),
+(1,2),
+(1,3),
+(1,4),
+(2,5),
+(2,3),
+(3,1),
+(3,2),
+(3,3),
+(4,6),
+(4,7);
+
+insert into roleproject (idproject,idrole)VALUES
+(1,1),
+(1,2),
+(2,2),
+(3,2),
+(4,2);
