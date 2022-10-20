@@ -76,6 +76,7 @@ nav a.active {
     border-radius: 50%;
     position: absolute;
     pointer-events: none;
+    z-index: 1000;
     /* animation: Anim2 1100ms linear infinite; */
 }
 .cursor.click {
