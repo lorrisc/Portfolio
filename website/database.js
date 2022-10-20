@@ -1,4 +1,4 @@
-const {Client} = require('pg');
+const { Client } = require("pg");
 
 const client = new Client({
     host: "localhost",
@@ -8,6 +8,12 @@ const client = new Client({
     database: "portfolio",
 });
 
-// client.connect();
+client.on("connect", () => {
+    console.log("Database connection");
+});
+
+client.on("end", () => {
+    console.log("Connection end");
+});
 
 module.exports = client;
