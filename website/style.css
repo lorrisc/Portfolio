@@ -130,6 +130,7 @@ nav a.active {
     right: 10px;
     font-family: "LinuxBiolinum", cursive;
     color: #939393;
+    z-index: 100;
 }
 
 

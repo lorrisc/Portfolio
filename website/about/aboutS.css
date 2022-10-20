@@ -112,7 +112,7 @@ a#mailLink:hover:after {
     display: flex;
     flex-direction: column;
 }
-#backgroundAbout img{
+#backgroundAbout svg, #backgroundAbout img{
     margin-top: 10vh;
 }
 
