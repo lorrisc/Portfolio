@@ -3,41 +3,42 @@ body {
     padding: 140px 0;
     display: flex;
     justify-content: center;
-    overflow-x: hidden; 
-    overflow-y: hidden; 
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
+#container {
+    z-index: 10;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /** --------------- IMAGE --------------- **/
-body > img {
+#container img {
     width: 302px;
+    aspect-ratio: 1/1;
     height: fit-content;
-    border-radius: 8px;
-    margin-right: 75px;
+    border-radius: 50%;
+    margin-bottom: 25px;
 }
 
 /** --------------- RIGHT --------------- **/
-#right {
-    width: 550px;
-    padding: 0 0 50px 0;
-}
-
-#right h1 {
+h1 {
     font-size: 2.9em;
     letter-spacing: 5px;
-    margin-bottom: 25px;
-    font-family: CalendasPlus;
+    margin-bottom: 90px;
+    font-family: LivvicRegular;
 }
-
-#right__text {
-    margin-bottom: 50px;
-    text-align: justify;
-}
-#right #right__text p,
-#right a {
+#container p,
+#container a {
     font-size: 1.3em;
     margin-bottom: 20px;
     line-height: 140%;
     font-family: LivvicRegular;
+    text-align: justify;
+    align-self: flex-start;
 }
 
 a#mailLink:after {
@@ -54,7 +55,9 @@ a#mailLink:after {
 a#mailLink:hover:after {
     width: 95px;
 }
-
+#curriculumAnnonce,#curriculumVitae {
+    margin-top: 35px;
+}
 #curriculumVitae {
     display: inline-block;
     vertical-align: middle;
@@ -100,4 +103,24 @@ a#mailLink:hover:after {
     transform: scale(1);
 }
 
+/** --------------- BACKGROUND --------------- **/
+#backgroundAbout {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#backgroundAbout img{
+    margin-top: 10vh;
+}
 
+#backgroundAbout #rectForBottom {
+    position: absolute;
+    top: 50vh;
+    width: 100vw;
+    height:110vh;
+    background-color: #171717;
+    z-index: -1;
+}
