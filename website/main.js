@@ -16,11 +16,11 @@ document.addEventListener("mousemove", (e) => {
     cursor.setAttribute("style", "top: " + (e.pageY - 17) + "px; left: " + (e.pageX - 17) + "px;");
 });
 
-document.addEventListener("click", () => {
-    cursor.classList.add("mouseclick");
-    setTimeout(() => {
-        cursor.classList.remove("mouseclick");
-    }, 500);
+document.addEventListener("mousedown", () => {
+    cursor.classList.add("click");
+    document.addEventListener("mouseup", () => {
+        cursor.classList.remove("click");
+    });
 });
 
 let navLink = document.querySelectorAll("nav a");
@@ -33,3 +33,6 @@ navLink.forEach((element) => {
         cursor.classList.remove("mouseHover");
     });
 });
+
+let credit = create("p",document.body,"Developped by Lorris Crappier","credit",null)
+
