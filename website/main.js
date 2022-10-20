@@ -16,8 +16,6 @@ document.addEventListener("mousemove", (e) => {
     cursor.setAttribute("style", "top: " + (e.pageY - 17) + "px; left: " + (e.pageX - 17) + "px;");
 });
 
-document.addEventListener("scroll", (event) => {});
-
 document.addEventListener("click", () => {
     cursor.classList.add("mouseclick");
     setTimeout(() => {
