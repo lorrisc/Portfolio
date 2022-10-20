@@ -6,6 +6,7 @@ const client = require("./database");
     const result = await client.query("SELECT * FROM project");
     console.log(result.rows);
     client.end();
+    module.exports = result;
 })();
 
 // client.query(`select * from project`, (err, res) => {
