@@ -34,22 +34,27 @@ navLink.forEach((element) => {
     });
 });
 
-let credit = create("p",document.body,"Developped by Lorris Crappier","credit",null)
+let credit = create("p", document.body, "Developped by Lorris Crappier", "credit", null);
 
-
-
-let scrollDown = document.querySelector('#scrollDown');
+let scrollDown = document.querySelector("#scrollDown");
+let scrollValue = [0];
 
 addEventListener("scroll", function () {
+    var y = window.scrollY;
+    scrollValue[1]=y
+    cursor.setAttribute("style", "top: " + (scrollValue[0]-scrollValue[1] - 17) + "px;");
+    scrollValue[0]=y
+
+
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
-
+    
     let scrollIndicator = document.querySelector("#scrollIndicator");
     scrollIndicator.style.height = scrolled + "%";
-
-    if(scrollDown){
-        scrollDown.classList.add("notActive")
+    
+    if (scrollDown) {
+        scrollDown.classList.add("notActive");
     }
+    
 });
-
