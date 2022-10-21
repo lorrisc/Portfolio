@@ -55,7 +55,8 @@ a#mailLink:after {
 a#mailLink:hover:after {
     width: 95px;
 }
-#curriculumAnnonce,#curriculumVitae {
+#curriculumAnnonce,
+#curriculumVitae {
     margin-top: 35px;
 }
 #curriculumVitae {
@@ -112,7 +113,8 @@ a#mailLink:hover:after {
     display: flex;
     flex-direction: column;
 }
-#backgroundAbout svg, #backgroundAbout img{
+#backgroundAbout svg,
+#backgroundAbout img {
     margin-top: 10vh;
 }
 
@@ -120,7 +122,17 @@ a#mailLink:hover:after {
     position: absolute;
     top: 50vh;
     width: 100vw;
-    height:110vh;
+    height: 110vh;
     background-color: #171717;
     z-index: -1;
+}
+
+
+#particles-js{
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    z-index: -100;
 }
