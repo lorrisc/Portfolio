@@ -1,26 +1,30 @@
-let projectList = {
-    project1: {
-        name: "Transport de sarcophage",
-        date: "Mai 2021",
-        roles: "Dev",
-        techs: "C++, Arduino",
-    },
-    project2: {
-        name: "TrainTravel",
-        date: "Avril 2022",
-        roles: "Design, Dev",
-        techs: "Html, Css, Js, Figma",
-    },
-    project3: {
+let projectList = [
+    // {
+    //     name: "TheLegoWar",
+    //     date: "Oct. 2022",
+    //     roles: "Dev",
+    //     techs: "Phaser 3, Js",
+    //     linkimage: "projects/images/phaserLego/gameScreen.PNG",
+    // },
+    {
         name: "MondialMeteo",
         date: "Juin 2022",
         roles: "Dev",
         techs: "Html, Css, Js",
+        linkimage: "projects/images/meteo/resultat7jours.png",
     },
-    project4: {
-        name: "TheLegoWar",
-        date: "Oct. 2022",
+    {
+        name: "TrainTravel",
+        date: "Avril 2022",
+        roles: "Design, Dev",
+        techs: "Html, Css, Js, Figma",
+        linkimage: "projects/images/traintravel/bestSales.png",
+    },
+    {
+        name: "Transport de sarcophage",
+        date: "Mai 2021",
         roles: "Dev",
-        techs: "Phaser 3, Js",
+        techs: "C++, Arduino",
+        linkimage: "projects/images/sarcophage/sarcophage.jpg",
     },
-};
+];
