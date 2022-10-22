@@ -108,48 +108,52 @@ projectForClick.forEach((element, index) => {
             cursor.classList.remove("mouseHover");
         });
 
-
         closeButton.addEventListener("click", () => {
             removeContainer();
-        })
-
-
-        let buttonImg = create("div", divContainerImg, null, null, "buttonImg");
-        let divLeftImg = create("div", buttonImg, null, null, "leftImg");
-        let triangleLeft = create("div", divLeftImg, null, "triangleButton", "triangleLeft");
-        let divRightImg = create("div", buttonImg, null, null, "rightImg");
-        let triangleRight = create("div", divRightImg, null, "triangleButton", "triangleRight");
-
-        let imgIndex = 0;
-        divLeftImg.addEventListener("click", () => {
-            if (imgIndex > 0) {
-                imgIndex--;
-                imgProject.src = projectList[index].linkimage[imgIndex];
-            }else{
-                imgIndex = projectList[index].linkimage.length - 1;
-                imgProject.src = projectList[index].linkimage[imgIndex];
-            }
-        })
-        divRightImg.addEventListener("click", () => {
-            if (imgIndex < projectList[index].linkimage.length-1) {
-                imgIndex++;
-                imgProject.src = projectList[index].linkimage[imgIndex];
-            }else{
-                imgIndex = 0;
-                imgProject.src = projectList[index].linkimage[imgIndex];
-            }
-        })
-
-
-        let rightLeftButton = document.querySelectorAll("#buttonImg > div");
-        rightLeftButton.forEach((element) => {
-            element.addEventListener("mouseenter", () => {
-                cursor.classList.add("mouseHover");
-            });
-            element.addEventListener("mouseleave", () => {
-                cursor.classList.remove("mouseHover");
-            });
         });
+
+        console.log();
+        if (projectList[index].linkimage.length > 1) {
+            let buttonImg = create("div", divContainerImg, null, null, "buttonImg");
+            let divLeftImg = create("div", buttonImg, null, null, "leftImg");
+            let triangleLeft = create("div", divLeftImg, null, "triangleButton", "triangleLeft");
+            let divRightImg = create("div", buttonImg, null, null, "rightImg");
+            let triangleRight = create("div", divRightImg, null, "triangleButton", "triangleRight");
+
+            let imgIndex = 0;
+            divLeftImg.addEventListener("click", () => {
+                if (imgIndex > 0) {
+                    imgIndex--;
+                    imgProject.src = projectList[index].linkimage[imgIndex];
+                } else {
+                    imgIndex = projectList[index].linkimage.length - 1;
+                    imgProject.src = projectList[index].linkimage[imgIndex];
+                }
+            });
+            divRightImg.addEventListener("click", () => {
+                if (imgIndex < projectList[index].linkimage.length - 1) {
+                    imgIndex++;
+                    imgProject.src = projectList[index].linkimage[imgIndex];
+                } else {
+                    imgIndex = 0;
+                    imgProject.src = projectList[index].linkimage[imgIndex];
+                }
+            });
+
+            let rightLeftButton = document.querySelectorAll("#buttonImg > div");
+            rightLeftButton.forEach((element) => {
+                element.addEventListener("mouseenter", () => {
+                    cursor.classList.add("mouseHover");
+                });
+                element.addEventListener("mouseleave", () => {
+                    cursor.classList.remove("mouseHover");
+                });
+            });
+        } else {
+            let allTitle = document.querySelector("#infoSupProject h2");
+            console.log(allTitle);
+            allTitle.style.marginTop = "0px";
+        }
     });
 
     function removeContainer() {
