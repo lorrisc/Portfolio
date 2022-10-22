@@ -60,7 +60,8 @@ projectForClick.forEach((element, index) => {
         let divContainer = create("div", container, null, null, null);
 
         let oprojectLeft = create("div", divContainer, null, null, "left");
-        let imgProject = create("img", oprojectLeft, null, null, null);
+        let divContainerImg = create("div", oprojectLeft, null, null, "imgContainer");
+        let imgProject = create("img", divContainerImg, null, null, null);
         imgProject.src = projectList[index].linkimage[0];
         let titleProject = create("h2", oprojectLeft, projectList[index].name, null, null);
 
@@ -111,6 +112,44 @@ projectForClick.forEach((element, index) => {
         closeButton.addEventListener("click", () => {
             removeContainer();
         })
+
+
+        let buttonImg = create("div", divContainerImg, null, null, "buttonImg");
+        let divLeftImg = create("div", buttonImg, null, null, "leftImg");
+        let triangleLeft = create("div", divLeftImg, null, "triangleButton", "triangleLeft");
+        let divRightImg = create("div", buttonImg, null, null, "rightImg");
+        let triangleRight = create("div", divRightImg, null, "triangleButton", "triangleRight");
+
+        let imgIndex = 0;
+        divLeftImg.addEventListener("click", () => {
+            if (imgIndex > 0) {
+                imgIndex--;
+                imgProject.src = projectList[index].linkimage[imgIndex];
+            }else{
+                imgIndex = projectList[index].linkimage.length - 1;
+                imgProject.src = projectList[index].linkimage[imgIndex];
+            }
+        })
+        divRightImg.addEventListener("click", () => {
+            if (imgIndex < projectList[index].linkimage.length-1) {
+                imgIndex++;
+                imgProject.src = projectList[index].linkimage[imgIndex];
+            }else{
+                imgIndex = 0;
+                imgProject.src = projectList[index].linkimage[imgIndex];
+            }
+        })
+
+
+        let rightLeftButton = document.querySelectorAll("#buttonImg > div");
+        rightLeftButton.forEach((element) => {
+            element.addEventListener("mouseenter", () => {
+                cursor.classList.add("mouseHover");
+            });
+            element.addEventListener("mouseleave", () => {
+                cursor.classList.remove("mouseHover");
+            });
+        });
     });
 
     function removeContainer() {

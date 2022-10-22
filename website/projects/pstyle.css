@@ -206,7 +206,7 @@ svg {
     font-weight: 700;
 }
 
-#closeIndic{
+#closeIndic {
     position: fixed;
     bottom: 40px;
     right: 50%;
@@ -216,8 +216,7 @@ svg {
     color: #939393;
 }
 
-
-#closeProjectText{
+#closeProjectText {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -225,6 +224,55 @@ svg {
     font-size: 1.1em;
     color: #939393;
 }
-#closeProjectText:hover{
-color: white;
+#closeProjectText:hover {
+    color: white;
+}
+
+#buttonImg {
+    width: 100%;
+    height: 95px;
+    position: relative;
+    top: -50%;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: space-between;
+}
+#leftImg,
+#rightImg {
+    width: 40px;
+    height: 100%;
+    background-color: #242525;
+    opacity: 0.9;
+    transition: opacity 300ms ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#leftImg:hover,
+#rightImg:hover {
+    opacity: 1;
+}
+#leftImg {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#rightImg {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.triangleButton{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    opacity: 1;
+}
+#triangleLeft {
+    border-width: 12.5px 21.7px 12.5px 0;
+    border-color: transparent white transparent transparent;
+}
+#triangleRight {
+    border-width: 12.5px 0 12.5px 21.7px;
+    border-color: transparent transparent transparent white;
 }
