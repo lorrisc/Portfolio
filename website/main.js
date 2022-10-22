@@ -34,27 +34,97 @@ navLink.forEach((element) => {
     });
 });
 
-let credit = create("p", document.body, "Developped by Lorris Crappier", "credit", null);
+let creditContainer = create("div", document.body, null, "credit", null);
+let creditText = "Developed by Lorris Crappier";
+let creditTextArray = creditText.split("");
+creditTextArray.forEach((element) => {
+    if (element == " ") {
+        console.log(element);
+        let letter = create("p", creditContainer, " ", null, null);
+        letter.style.marginRight = "5px";
+    } else {
+        let letter = create("p", creditContainer, element, null, null);
+    }
+});
+
+let colorElement = [
+    "#BBFF00",
+    "#BBFF00",
+    "#D4FF00",
+    "#D4FF00",
+    "#EEFF00",
+    "#EEFF00",
+    "#FFF600",
+    "#FFF600",
+    "#FFDC00",
+    "#FFDC00",
+    "#FFDC00",
+    "#FFC300",
+    "#FFC300",
+    "#FFC300",
+    "#FFAA00",
+    "#FFAA00",
+    "#FF9400",
+    "#FF9400",
+    "#FF7B00",
+    "#FF7B00",
+    "#FF7B00",
+    "#FF6100",
+    "#FF6100",
+    "#FF4800",
+    "#FF4800",
+    "#FF2E00",
+    "#FF2E00",
+    "#FF1500",
+];
+let leave = false;
+let creditLetter = document.querySelectorAll(".credit p");
+creditContainer.addEventListener("mouseenter", (e) => {
+    let i = 0;
+    function uncolorElementFunc(indexelement) {
+        setTimeout(() => {
+            creditLetter[indexelement].style.color = "#939393";
+        }, 600);
+    }
+    function colorElementFunct() {
+        if (leave != true) {
+            creditLetter[i].style.color = colorElement[i];
+            uncolorElementFunc(i);
+            i++;
+            if (i < creditLetter.length) {
+                setTimeout(colorElementFunct, 35);
+            }
+        }
+    }
+    colorElementFunct();
+});
+creditContainer.addEventListener("mouseleave", (e) => {
+    leave = true;
+    creditLetter.forEach((element, index) => {
+        element.style.color = "#939393";
+    });
+    setTimeout(() => {
+        leave = false;
+    }, 1000);
+});
 
 let scrollDown = document.querySelector("#scrollDown");
 let scrollValue = [0];
 
 addEventListener("scroll", function () {
     var y = window.scrollY;
-    scrollValue[1]=y
-    cursor.setAttribute("style", "top: " + (scrollValue[0]-scrollValue[1] - 17) + "px;");
-    scrollValue[0]=y
-
+    scrollValue[1] = y;
+    cursor.setAttribute("style", "top: " + (scrollValue[0] - scrollValue[1] - 17) + "px;");
+    scrollValue[0] = y;
 
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
-    
+
     let scrollIndicator = document.querySelector("#scrollIndicator");
     scrollIndicator.style.height = scrolled + "%";
-    
+
     if (scrollDown) {
         scrollDown.classList.add("notActive");
     }
-    
 });

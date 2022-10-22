@@ -131,6 +131,8 @@ nav a.active {
     font-family: "LinuxBiolinum", cursive;
     color: #939393;
     z-index: 100;
+
+    display: flex;
 }
 
 
