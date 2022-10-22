@@ -1,7 +1,62 @@
-<article class="projects leftProject">
+<section id="carrousel">
+            <!-- <article class="projects leftProject">
                 <article class="projects__presentation" data-aos="zoom-in-up">
                     <div class="projects__presentation__image">
-                        <img src="./projects/images/traintravel/bestSales.png" alt="" />
+                        <img src="./projects/images/phaserLego/gameScreen.PNG" alt="" />
+                    </div>
+                    <div class="projects__presentation__text">
+                        <h2 data-aos="fade-up" data-aos-duration="500">TheLegoWar</h2>
+                        <p>Click for see project</p>
+                    </div>
+                </article>
+                <article class="projects__information" data-aos="zoom-in-left">
+                    <section>
+                        <div class="date">
+                            <h3>Date</h3>
+                            <p>Oct. 2022</p>
+                        </div>
+                        <div class="roles">
+                            <h3>Rôles</h3>
+                            <p>Dev</p>
+                        </div>
+                        <div class="techs">
+                            <h3>Techs</h3>
+                            <p>Phaser 3, Js</p>
+                        </div>
+                    </section>
+                </article>
+            </article>
+            <article class="projects rightProject">
+                <article class="projects__presentation" data-aos="zoom-in-up">
+                    <div class="projects__presentation__image">
+                        <img src="./projects/images/meteo/new7jours2.PNG" alt="" />
+                    </div>
+                    <div class="projects__presentation__text">
+                        <h2 data-aos="fade-up" data-aos-duration="500">MondialMeteo</h2>
+                        <p>Click for see project</p>
+                    </div>
+                </article>
+                <article class="projects__information" data-aos="zoom-in-right">
+                    <section>
+                        <div class="date">
+                            <h3>Date</h3>
+                            <p>Juin 2022</p>
+                        </div>
+                        <div class="roles">
+                            <h3>Rôles</h3>
+                            <p>Dev</p>
+                        </div>
+                        <div class="techs">
+                            <h3>Techs</h3>
+                            <p>Html, Css, Js</p>
+                        </div>
+                    </section>
+                </article>
+            </article>
+            <article class="projects leftProject">
+                <article class="projects__presentation" data-aos="zoom-in-up">
+                    <div class="projects__presentation__image">
+                        <img src="./projects/images/traintravel/new2.PNG" alt="" />
                     </div>
                     <div class="projects__presentation__text">
                         <h2 data-aos="fade-up" data-aos-duration="500">TrainTravel</h2>
@@ -21,64 +76,6 @@
                         <div class="techs">
                             <h3>Techs</h3>
                             <p>Html, Css, Js, Figma</p>
-                        </div>
-                    </section>
-                </article>  
-            </article>
-
-
-
-            
-            <article class="projects rightProject">
-                <article class="projects__presentation" data-aos="zoom-in-up">
-                    <div class="projects__presentation__image">
-                        <img src="./projects/images/phaserLego/gameScreen.PNG" alt="" />
-                    </div>
-                    <div class="projects__presentation__text">
-                        <h2 data-aos="fade-up" data-aos-duration="500">TheLegoWar</h2>
-                        <p>Click for see project</p>
-                    </div>
-                </article>
-                <article class="projects__information" data-aos="zoom-in-right">
-                    <section>
-                        <div class="date">
-                            <h3>Date</h3>
-                            <p>Oct. 2022</p>
-                        </div>
-                        <div class="roles">
-                            <h3>Rôles</h3>
-                            <p>Dev</p>
-                        </div>
-                        <div class="techs">
-                            <h3>Techs</h3>
-                            <p>Phaser 3, Js</p>
-                        </div>
-                    </section>
-                </article>
-            </article>
-            <article class="projects leftProject">
-                <article class="projects__presentation" data-aos="zoom-in-up">
-                    <div class="projects__presentation__image">
-                        <img src="./projects/images/meteo/resultat7jours.png" alt="" />
-                    </div>
-                    <div class="projects__presentation__text">
-                        <h2 data-aos="fade-up" data-aos-duration="500">MondialMeteo</h2>
-                        <p>Click for see project</p>
-                    </div>
-                </article>
-                <article class="projects__information" data-aos="zoom-in-left">
-                    <section>
-                        <div class="date">
-                            <h3>Date</h3>
-                            <p>Juin 2022</p>
-                        </div>
-                        <div class="roles">
-                            <h3>Rôles</h3>
-                            <p>Dev</p>
-                        </div>
-                        <div class="techs">
-                            <h3>Techs</h3>
-                            <p>Html, Css, Js</p>
                         </div>
                     </section>
                 </article>
@@ -109,4 +106,46 @@
                         </div>
                     </section>
                 </article>
-            </article>
+            </article> -->
+        </section>
+
+        <!-- <section id="infoSupProject">
+            <div>
+                <div id="left">
+                    <img src="./projects/images/sarcophage/sarcophage.jpg" alt="" />
+                    <h2>Transport de sarcophage</h2>
+                    <section>
+                        <div class="date">
+                            <h3>Date</h3>
+                            <p>Mai 2021</p>
+                        </div>
+                        <div class="roles">
+                            <h3>Rôles</h3>
+                            <p>Dev</p>
+                        </div>
+                        <div class="techs">
+                            <h3>Techs</h3>
+                            <p>C++, Arduino</p>
+                        </div>
+                    </section>
+                </div>
+                <div id="right">
+                    <div id="textProject">
+                        <p>
+                            Suite à la découverte de sarcophage en bois dans le Cantal, de nombreux acteurs interviennent et ont pris part dans ce projet pour oeuvrer en faveur de la bonne conservation de ces pièces. En groupe, en fin de terminale
+                            (STI2D SIN), nous avons développé un système permettant la gestion de la sécurité des sarcophages lorsqu'ils seront immergés (pour préserver leur états de conservation) au fond d'un lac.
+                        </p>
+                        <p>Nous avons utilisé du matériel Arduino, des capteurs (capteur de température, capteur pH-mètre, capteur de luminosité) pour concevoir un système permettant de surveillé les sarcophages.</p>
+                        <p>
+                            Ce projet a été réalisé en groupe de 4. Deux élèves de STI2D SIN (dont moi) pour la partie informatique, et deux élèves de STI2D ITEC pour concevoir la boite qui accueillera notre système (plongé à 10 mètre sous l'eau, 365
+                            jours par ans). Ce premier important projet nous a également permis de découvrir la gestion de projet.
+                        </p>
+                    </div>
+                    <div id="openProject">
+                        <a>Visit website</a>
+                        <a>Github project</a>
+                    </div>
+                </div>
+            </div>
+            <p id="closeIndic">Escape or click for close project</p>
+        </section> -->
