@@ -8,6 +8,7 @@ function loadercreate(tag, parent, text = null, classs = null) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("noscroll");
     let loader = document.querySelector("#loader");
 
     let element = 0;
@@ -49,7 +50,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 setTimeout(() => {
                     let loader = document.querySelector("#loader");
                     loader.classList.add("finishLoader");
-                }, 600);
+                    document.body.classList.remove("noscroll");
+                }, 300);
             }, 250);
         }
     }

@@ -21,11 +21,25 @@ body {
     display: flex;
     font-size: 1.2em;
     color: #20C20E;
-    animation: apparitionKeyboard 600ms linear;
 }
 
 #loader.finishLoader{
-    display:none;
+    /* display:none; */
+    animation: removeLoader 300ms linear;
+    animation-fill-mode: both;
+}
+@keyframes removeLoader {
+    0% {
+        height: 100%;
+    }
+    99% {
+        height: 0%;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+        z-index: -100000;
+    }
 }
 #loader p{
     font-family: 'LoraBold', serif; 
