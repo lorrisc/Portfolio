@@ -39,7 +39,6 @@ let creditText = "Developed by Lorris Crappier";
 let creditTextArray = creditText.split("");
 creditTextArray.forEach((element) => {
     if (element == " ") {
-        console.log(element);
         let letter = create("p", creditContainer, " ", null, null);
         letter.style.marginRight = "5px";
     } else {
