@@ -21,6 +21,7 @@ let projectList = [
         techs: "Html, Css, Js",
         description: [
             "MondialMeteo est un projet personnel. Avec des options de géolocalisation, ou de saisie de ville il affiche la météo du lieu recherché. La météo peut être instantanné, au format 12 heures ou 7 jours. Il est aussi possible de connaître la polution de l'air et les informations  solaire et lunaire.",
+            "Possibilité de sauvegardé les villes recherchées pour les retrouver à la prochaine connexion (gérer avec le local storage). Un historique à également été mis en place de la même façon.",
             "Les différentes informations sont classiquement récupérées via des APIs.",
         ],
         linkimage: "projects/images/meteo/resultat7jours.png",

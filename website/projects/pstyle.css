@@ -186,6 +186,7 @@ svg {
     display: flex;
     font-family: LinuxBiolinum, cursive;
     margin-top: 25px;
+    flex-wrap: wrap;
 }
 #infoSupProject div #left section div {
     display: flex;
@@ -213,4 +214,17 @@ svg {
     font-family: "LinuxBiolinum", cursive;
     font-size: 1.1em;
     color: #939393;
+}
+
+
+#closeProjectText{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-family: "LinuxBiolinum", cursive;
+    font-size: 1.1em;
+    color: #939393;
+}
+#closeProjectText:hover{
+color: white;
 }

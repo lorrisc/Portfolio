@@ -55,6 +55,8 @@ let projectForClick = document.querySelectorAll(".projects__presentation");
 projectForClick.forEach((element, index) => {
     element.addEventListener("click", () => {
         let container = create("section", document.body, null, null, "infoSupProject");
+        container.setAttribute("data-aos", "flip-down");
+
         let divContainer = create("div", container, null, null, null);
 
         let oprojectLeft = create("div", divContainer, null, null, "left");
@@ -95,9 +97,22 @@ projectForClick.forEach((element, index) => {
         }
 
         let closeIndic = create("p", container, "Escape for close project", null, "closeIndic");
+        let closeButton = create("p", container, "Close project", null, "closeProjectText");
         document.body.style.overflowY = "hidden";
+
+        closeButton.addEventListener("mouseenter", () => {
+            cursor.classList.add("mouseHover");
+        });
+        closeButton.addEventListener("mouseleave", () => {
+            cursor.classList.remove("mouseHover");
+        });
+
+
+        closeButton.addEventListener("click", () => {
+            removeContainer();
+        })
     });
-    
+
     function removeContainer() {
         let container = document.querySelector("#infoSupProject");
         container.remove();
@@ -108,9 +123,4 @@ projectForClick.forEach((element, index) => {
             removeContainer();
         }
     });
-
 });
-
-
-
-

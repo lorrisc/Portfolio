@@ -19,7 +19,7 @@
     src: url("assets/fonts/Calendas_Plus.otf");
 }
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
 * {
     margin: 0;
@@ -124,8 +124,7 @@ nav a.active {
     cursor: none;
 }
 
-
-.credit{
+.credit {
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -135,10 +134,6 @@ nav a.active {
 
     display: flex;
 }
-
-
-
-
 
 /** -------------------- INDICATOR PAGE */
 #advancementInPage {
