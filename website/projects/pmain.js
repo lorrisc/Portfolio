@@ -7,7 +7,7 @@ projectList.forEach(function (element, index) {
 
     let projectDivImg = create("div", projectPresentation, null, "projects__presentation__image", null);
     let projectImg = create("img", projectDivImg, null, null, null);
-    projectImg.src = element.linkimage;
+    projectImg.src = element.linkimage[0];
 
     let projectDivInfo = create("div", projectPresentation, null, "projects__presentation__text", null);
     let projectTitle = create("h2", projectDivInfo, element.name, null, null);
@@ -61,7 +61,7 @@ projectForClick.forEach((element, index) => {
 
         let oprojectLeft = create("div", divContainer, null, null, "left");
         let imgProject = create("img", oprojectLeft, null, null, null);
-        imgProject.src = projectList[index].linkimage;
+        imgProject.src = projectList[index].linkimage[0];
         let titleProject = create("h2", oprojectLeft, projectList[index].name, null, null);
 
         let sectionInfoProject = create("section", oprojectLeft, null, null, null);

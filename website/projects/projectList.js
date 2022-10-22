@@ -8,7 +8,7 @@ let projectList = [
             "Ce petit jeu vidéo jouable sur navigateur à été réalisé avec Phaser 3, un framework JavaScript. Le but du jeu est de récolter les pièces en légo tous en évitant des missiles, des avions et les boules de feu de Wario. Il est possible de tuer Wario en lui tirant dessus. Mais... Wario est très fort est réapparait souvent ! Il est possible de voler, ainsi que de se déplacer.",
             "Ce petit projet à été développé dans le cadre de mon BUT informatique.",
         ],
-        linkimage: "projects/images/phaserLego/gameScreen.PNG",
+        linkimage: ["projects/images/phaserLego/gameScreen.PNG"],
         linkproject: [
             ["Lien Google", "https://www.google.fr/"],
             ["Lien Twitch", "https://www.twitch.tv/"],
@@ -24,7 +24,7 @@ let projectList = [
             "Possibilité de sauvegardé les villes recherchées pour les retrouver à la prochaine connexion (gérer avec le local storage). Un historique à également été mis en place de la même façon.",
             "Les différentes informations sont classiquement récupérées via des APIs.",
         ],
-        linkimage: "projects/images/meteo/resultat7jours.png",
+        linkimage: ["projects/images/meteo/1home.png", "projects/images/meteo/2hourResult.png", "projects/images/meteo/3hourOpen.png", "projects/images/meteo/4homeSunMoon.png", "projects/images/meteo/5days.png"],
         linkproject: [
             ["Lien Google", "https://www.google.fr/"],
             ["Lien Twitch", "https://www.twitch.tv/"],
@@ -38,7 +38,7 @@ let projectList = [
         description: [
             "Ce site web permet de visualiser et commander des billets de trains. Il s'inscrit dans le cadre de ma première année de BUT informatique à Valence. Il nous était fourni un serveur pour pouvoir récupérer les différentes informations. Nous pouvions aussi intéragir avec celui-ci pour se connecter à un profil client, ou procéder au paiement de un ou plusieurs billets de train.",
         ],
-        linkimage: "projects/images/traintravel/bestSales.png",
+        linkimage: ["projects/images/traintravel/1market.png", "projects/images/traintravel/2search.png", "projects/images/traintravel/3result.png", "projects/images/traintravel/4inteMaps.png", "projects/images/traintravel/5bestsales.png"],
         linkproject: [
             ["Lien Google", "https://www.google.fr/"],
             ["Lien Twitch", "https://www.twitch.tv/"],
@@ -54,7 +54,7 @@ let projectList = [
             "Nous avons utilisé du matériel Arduino, des capteurs (capteur de température, capteur pH-mètre, capteur de luminosité) pour concevoir un système permettant de surveillé les sarcophages.",
             "Ce projet a été réalisé en groupe de 4. Deux élèves de STI2D SIN (dont moi) pour la partie informatique, et deux élèves de STI2D ITEC pour concevoir la boite qui accueillera notre système (plongé à 10 mètre sous l'eau, 365 jours par ans). Ce premier important projet nous a également permis de découvrir la gestion de projet.",
         ],
-        linkimage: "projects/images/sarcophage/sarcophage.jpg",
+        linkimage: ["projects/images/sarcophage/sarcophage.jpg"],
         linkproject: [],
     },
 ];
