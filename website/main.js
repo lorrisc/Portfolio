@@ -76,7 +76,6 @@ let colorElement = [
     "#FF2E00",
     "#FF1500",
 ];
-let leave = false;
 let creditLetter = document.querySelectorAll(".credit p");
 creditContainer.addEventListener("mouseenter", (e) => {
     let i = 0;
@@ -86,26 +85,24 @@ creditContainer.addEventListener("mouseenter", (e) => {
         }, 600);
     }
     function colorElementFunct() {
-        if (leave != true) {
-            creditLetter[i].style.color = colorElement[i];
-            uncolorElementFunc(i);
-            i++;
-            if (i < creditLetter.length) {
-                setTimeout(colorElementFunct, 35);
-            }
+        creditLetter[i].style.color = colorElement[i];
+        uncolorElementFunc(i);
+        i++;
+        if (i < creditLetter.length) {
+            setTimeout(colorElementFunct, 35);
         }
     }
     colorElementFunct();
 });
-creditContainer.addEventListener("mouseleave", (e) => {
-    leave = true;
-    creditLetter.forEach((element, index) => {
-        element.style.color = "#939393";
-    });
-    setTimeout(() => {
-        leave = false;
-    }, 1000);
-});
+// creditContainer.addEventListener("mouseleave", (e) => {
+//     leave = true;
+//     creditLetter.forEach((element, index) => {
+//         element.style.color = "#939393";
+//     });
+//     setTimeout(() => {
+//         leave = false;
+//     }, 1000);
+// });
 
 let scrollDown = document.querySelector("#scrollDown");
 let scrollValue = [0];

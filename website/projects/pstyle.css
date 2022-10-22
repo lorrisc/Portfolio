@@ -124,7 +124,7 @@ svg {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
 
-    z-index: 1000;
+    z-index: 100;
     display: flex;
 }
 #infoSupProject > div {
@@ -184,16 +184,14 @@ svg {
 
 #infoSupProject div #left section {
     display: flex;
-    flex-direction: column;
-    width: 49%;
     font-family: LinuxBiolinum, cursive;
     margin-top: 25px;
 }
 #infoSupProject div #left section div {
     display: flex;
     flex-direction: column;
-    width: 49%;
     margin-top: 20px;
+    margin-right: 90px;
 }
 #infoSupProject div #left section h3 {
     font-size: 1.4em;

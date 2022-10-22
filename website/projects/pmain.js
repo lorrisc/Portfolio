@@ -50,3 +50,67 @@ projectPresentation.forEach((element) => {
         cursor.classList.remove("mouseHover");
     });
 });
+
+let projectForClick = document.querySelectorAll(".projects__presentation");
+projectForClick.forEach((element, index) => {
+    element.addEventListener("click", () => {
+        let container = create("section", document.body, null, null, "infoSupProject");
+        let divContainer = create("div", container, null, null, null);
+
+        let oprojectLeft = create("div", divContainer, null, null, "left");
+        let imgProject = create("img", oprojectLeft, null, null, null);
+        imgProject.src = projectList[index].linkimage;
+        let titleProject = create("h2", oprojectLeft, projectList[index].name, null, null);
+
+        let sectionInfoProject = create("section", oprojectLeft, null, null, null);
+        let divDate = create("div", sectionInfoProject, null, "date", null);
+        let dateProject = create("h3", divDate, "Date", null, null);
+        let dateProjectValue = create("p", divDate, projectList[index].date, null, null);
+        let divRoles = create("div", sectionInfoProject, null, "roles", null);
+        let rolesProject = create("h3", divRoles, "Roles", null, null);
+        let rolesProjectValue = create("p", divRoles, projectList[index].roles, null, null);
+        let divTechs = create("div", sectionInfoProject, null, "techs", null);
+        let techsProject = create("h3", divTechs, "Techs", null, null);
+        let techsProjectValue = create("p", divTechs, projectList[index].techs, null, null);
+
+        let oprojectRight = create("div", divContainer, null, null, "right");
+        let textProject = create("div", oprojectRight, null, null, "textProject");
+        for (let i = 0; i < projectList[index].description.length; i++) {
+            let p = create("p", textProject, projectList[index].description[i], null, null);
+        }
+
+        let divLink = create("div", oprojectRight, null, null, "openProject");
+        for (let i = 0; i < projectList[index].linkproject.length; i++) {
+            let a = create("a", divLink, null, null, "projectLink");
+            a.href = projectList[index].linkproject[i][1];
+            a.target = "_blank";
+            a.innerHTML = projectList[index].linkproject[i][0];
+
+            a.addEventListener("mouseenter", () => {
+                cursor.classList.add("mouseHover");
+            });
+            a.addEventListener("mouseleave", () => {
+                cursor.classList.remove("mouseHover");
+            });
+        }
+
+        let closeIndic = create("p", container, "Escape for close project", null, "closeIndic");
+        document.body.style.overflowY = "hidden";
+    });
+    
+    function removeContainer() {
+        let container = document.querySelector("#infoSupProject");
+        container.remove();
+        document.body.style.overflowY = "auto";
+    }
+    document.addEventListener("keydown", (e) => {
+        if (e.key == "Escape") {
+            removeContainer();
+        }
+    });
+
+});
+
+
+
+
