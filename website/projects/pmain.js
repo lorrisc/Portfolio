@@ -41,13 +41,16 @@ projectList.forEach(function (element, index) {
 });
 
 let projectPresentation = document.querySelectorAll(".projects__presentation");
+let clickForSee = document.querySelectorAll(".projects__presentation__text p");
 
-projectPresentation.forEach((element) => {
+projectPresentation.forEach((element, index) => {
     element.addEventListener("mouseenter", () => {
         cursor.classList.add("mouseHover");
+        clickForSee[index].classList.add("activeMouse");
     });
     element.addEventListener("mouseleave", () => {
         cursor.classList.remove("mouseHover");
+        clickForSee[index].classList.remove("activeMouse");
     });
 });
 

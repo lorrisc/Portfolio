@@ -12,7 +12,6 @@ curriculumvitae.addEventListener("mouseleave", () => {
     cursor.classList.remove("mouseHover");
 });
 
-
 let contact = document.querySelector("#mailLink");
 
 contact.addEventListener("mouseenter", () => {
@@ -21,3 +20,6 @@ contact.addEventListener("mouseenter", () => {
 contact.addEventListener("mouseleave", () => {
     cursor.classList.remove("mouseHover");
 });
+
+sessionStorage.clear();
+sessionStorage.setItem("visitStatus", "true");
