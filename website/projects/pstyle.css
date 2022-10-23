@@ -483,6 +483,9 @@ svg {
     .projects__information section div {
         margin: 0 15px;
     }
+    .projects:last-child{
+        margin-bottom: 25vh;
+    }
 }
 @media screen and (max-width: 770px) {
     .projects__presentation {
