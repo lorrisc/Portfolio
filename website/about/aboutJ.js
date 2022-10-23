@@ -1,12 +1,10 @@
-
-window.addEventListener('onload', (event) => {
+window.addEventListener("onload", (event) => {
     let pageTransition = document.querySelector(".pageTransition");
     pageTransition.classList.add("endAnimation");
-  });
-window.addEventListener('load', (event) => {
+});
+window.addEventListener("load", (event) => {
     pageTransition.classList.remove("endAnimation");
-  });
-
+});
 
 let curriculumvitae = document.querySelector("#curriculumVitae");
 
