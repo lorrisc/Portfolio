@@ -9,10 +9,7 @@ let projectList = [
             "Ce petit projet à été développé dans le cadre de mon BUT informatique.",
         ],
         linkimage: ["projects/images/phaserLego/gameScreen.PNG"],
-        linkproject: [
-            ["Lien Google", "https://www.google.fr/"],
-            ["Lien Twitch", "https://www.twitch.tv/"],
-        ],
+        linkproject: [],
     },
     {
         name: "MondialMeteo",
@@ -25,10 +22,7 @@ let projectList = [
             "Les différentes informations sont classiquement récupérées via des APIs.",
         ],
         linkimage: ["projects/images/meteo/1home.png", "projects/images/meteo/2hourResult.png", "projects/images/meteo/3hourOpen.png", "projects/images/meteo/4homeSunMoon.png", "projects/images/meteo/5days.png"],
-        linkproject: [
-            ["Lien Google", "https://www.google.fr/"],
-            ["Lien Twitch", "https://www.twitch.tv/"],
-        ],
+        linkproject: [["Github", "https://github.com/noix2kgouu/mondialMeteo"]],
     },
     {
         name: "TrainTravel",
@@ -40,8 +34,8 @@ let projectList = [
         ],
         linkimage: ["projects/images/traintravel/1market.png", "projects/images/traintravel/2search.png", "projects/images/traintravel/3result.png", "projects/images/traintravel/4inteMaps.png", "projects/images/traintravel/5bestsales.png"],
         linkproject: [
-            ["Lien Google", "https://www.google.fr/"],
-            ["Lien Twitch", "https://www.twitch.tv/"],
+            ["Visit the website (limited functionality)", "https://noix2kgouu.github.io/TrainTravel/"],
+            ["Github", "https://github.com/noix2kgouu/TrainTravel"],
         ],
     },
     {

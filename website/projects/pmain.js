@@ -115,7 +115,6 @@ projectForClick.forEach((element, index) => {
             removeContainer();
         });
 
-        console.log();
         if (projectList[index].linkimage.length > 1) {
             let buttonImg = create("div", divContainerImg, null, null, "buttonImg");
             let divLeftImg = create("div", buttonImg, null, null, "leftImg");
@@ -154,7 +153,6 @@ projectForClick.forEach((element, index) => {
             });
         } else {
             let allTitle = document.querySelector("#infoSupProject h2");
-            console.log(allTitle);
             allTitle.style.marginTop = "0px";
         }
     });

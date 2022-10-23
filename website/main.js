@@ -8,6 +8,7 @@ function create(tag, parent, text = null, classs = null, id = null) {
 
     return element;
 }
+
 let newCursor = create("div", document.body, null, "cursor", null);
 
 const cursor = document.querySelector(".cursor");
@@ -25,12 +26,47 @@ document.addEventListener("mousedown", () => {
 
 let navLink = document.querySelectorAll("nav a");
 
-navLink.forEach((element) => {
+let pageTransition = document.querySelector(".pageTransition");
+function createTransition() {
+    pageTransition.classList.remove("desactive");
+    pageTransition.classList.add("animationSlideUp");
+    setTimeout(() => {
+        pageTransition.classList.add("endAnimation");
+    }, 400);
+}
+navLink.forEach((element, index) => {
     element.addEventListener("mouseenter", () => {
         cursor.classList.add("mouseHover");
     });
     element.addEventListener("mouseleave", () => {
         cursor.classList.remove("mouseHover");
+    });
+    element.addEventListener("click", () => {
+        actualLinkPage = window.location.href;
+        if (index == 0) {
+            askPage = "index.html";
+            if (actualLinkPage.includes(askPage)) {
+                console.log("same page");
+            } else {
+                // pageTransition.classList.add("pageTransition");
+                createTransition();
+                console.log("sropikhvrpoise");
+                setTimeout(() => {
+                    window.location.href = "../index.html";
+                }, 850);
+            }
+        } else if (index == 1) {
+            askPage = "aboutP.html";
+            if (actualLinkPage.includes(askPage)) {
+                console.log("same page");
+            } else {
+                // pageTransition.classList.add("pageTransition");
+                createTransition();
+                setTimeout(() => {
+                    window.location.href = "about/aboutP.html";
+                }, 850);
+            }
+        }
     });
 });
 

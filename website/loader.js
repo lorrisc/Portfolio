@@ -65,5 +65,6 @@ window.addEventListener("DOMContentLoaded", () => {
     }else{
         let loader = document.querySelector("#loader");
         loader.classList.add("noLoader");
+
     }
 });
