@@ -66,9 +66,10 @@ projectForClick.forEach((element, index) => {
         let divContainerImg = create("div", oprojectLeft, null, null, "imgContainer");
         let imgProject = create("img", divContainerImg, null, null, null);
         imgProject.src = projectList[index].linkimage[0];
-        let titleProject = create("h2", oprojectLeft, projectList[index].name, null, null);
+        let divTextInfo = create("div", oprojectLeft, null, null, null);
+        let titleProject = create("h2", divTextInfo, projectList[index].name, null, null);
 
-        let sectionInfoProject = create("section", oprojectLeft, null, null, null);
+        let sectionInfoProject = create("section", divTextInfo, null, null, null);
         let divDate = create("div", sectionInfoProject, null, "date", null);
         let dateProject = create("h3", divDate, "Date", null, null);
         let dateProjectValue = create("p", divDate, projectList[index].date, null, null);
@@ -100,8 +101,8 @@ projectForClick.forEach((element, index) => {
             });
         }
 
-        let closeIndic = create("p", container, "Escape for close project", null, "closeIndic");
-        let closeButton = create("p", container, "Close project", null, "closeProjectText");
+        let closeIndic = create("p", document.body, "Escape for close project", null, "closeIndic");
+        let closeButton = create("p", document.body, "Close project", null, "closeProjectText");
         document.body.style.overflowY = "hidden";
 
         closeButton.addEventListener("mouseenter", () => {
@@ -160,6 +161,12 @@ projectForClick.forEach((element, index) => {
     function removeContainer() {
         let container = document.querySelector("#infoSupProject");
         container.remove();
+
+        let closeIndic = document.querySelector("#closeIndic");
+        let closeProjectText = document.querySelector("#closeProjectText");
+        closeIndic.remove();
+        closeProjectText.remove();
+
         document.body.style.overflowY = "auto";
     }
     document.addEventListener("keydown", (e) => {

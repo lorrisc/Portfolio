@@ -188,7 +188,8 @@ svg {
     z-index: 100;
     display: flex;
 
-overflow-y: scroll;}
+    overflow-y: scroll;
+}
 #infoSupProject > div {
     display: flex;
 }
@@ -237,6 +238,7 @@ overflow-y: scroll;}
     font-size: 0.75em;
     margin-top: 20px;
     color: #c8c8c8;
+    margin: 0 0 100px 0;
 }
 #openProject a {
     margin-right: 40px;
@@ -269,23 +271,24 @@ overflow-y: scroll;}
     font-weight: 700;
 }
 
-#closeIndic {
+#closeIndic,
+#closeProjectText {
+    font-family: "LinuxBiolinum", cursive;
+    font-size: 1.1em;
+    color: #939393;
+    z-index: 100000;
     position: fixed;
+}
+#closeIndic {
     bottom: 40px;
     right: 50%;
     transform: translateX(50%);
-    font-family: "LinuxBiolinum", cursive;
-    font-size: 1.1em;
     color: #939393;
 }
 
 #closeProjectText {
-    position: fixed;
     top: 20px;
     right: 20px;
-    font-family: "LinuxBiolinum", cursive;
-    font-size: 1.1em;
-    color: #939393;
 }
 #closeProjectText:hover {
     color: white;
@@ -350,6 +353,36 @@ overflow-y: scroll;}
         justify-content: space-evenly;
     }
 }
+@media screen and (max-width: 1500px) {
+    #infoSupProject #left {
+        flex-direction: row;
+    }
+    #infoSupProject > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    #infoSupProject #left,
+    #infoSupProject #right {
+        margin: 20px 5%;
+        width: 60%;
+    }
+    #infoSupProject #left {
+        margin-top: 60px;
+    }
+    #infoSupProject #left img,
+    #infoSupProject #right div#textProject p:nth-child(1) {
+        margin-top: 0;
+    }
+    #infoSupProject #left img {
+        min-width: 70%;
+    }
+    #infoSupProject #left > div:nth-child(2) {
+        margin-left: 20px;
+    }
+    #infoSupProject #left h2 {
+        margin-top: 0;
+    }
+}
 
 @media screen and (max-width: 1450px) {
     .projects__information {
@@ -361,11 +394,26 @@ overflow-y: scroll;}
     .projects {
         justify-content: center;
     }
-    .credit{
+    .credit {
         /* position: relative;
         bottom: auto;
         right: auto; */
         display: none;
+    }
+}
+@media screen and (max-width: 1300px) {
+    div#left {
+        flex-wrap: wrap;
+    }
+    #infoSupProject div #left section {
+        margin-top: 10px;
+    }
+    #infoSupProject #left > div:nth-child(2) {
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+    #infoSupProject #left img {
+        border-top-right-radius: 12px;
     }
 }
 @media screen and (max-width: 1250px) {
@@ -375,15 +423,27 @@ overflow-y: scroll;}
     .projects__presentation h2 {
         font-size: 2.5em;
     }
+    #infoSupProject #left,
+    #infoSupProject #right {
+        width: 70%;
+    }
 }
 @media screen and (max-width: 1150px) {
     #carrousel {
         width: 80%;
     }
+    #infoSupProject #left,
+    #infoSupProject #right {
+        width: 75%;
+    }
 }
 @media screen and (max-width: 1050px) {
     #carrousel {
         width: 85%;
+    }
+    #infoSupProject #left,
+    #infoSupProject #right {
+        width: 80%;
     }
 }
 @media screen and (max-width: 950px) {
@@ -404,17 +464,48 @@ overflow-y: scroll;}
     .projects__presentation {
         width: 60%;
     }
-    #advancementInPage{
+    #advancementInPage {
         display: none;
     }
-    .projects__presentation__text{
+    .projects__presentation__text {
         margin-bottom: 30px;
     }
-    
+    #infoSupProject #left,
+    #infoSupProject #right {
+        width: 85%;
+    }
+    .projects__information section {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .projects__information section div {
+        margin: 0 15px;
+    }
 }
 @media screen and (max-width: 770px) {
     .projects__presentation {
         width: 70%;
+    }
+    #infoSupProject div #left section div {
+        margin-right: 0;
+    }
+    #infoSupProject div #left section {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #infoSupProject div #left section div {
+        margin: 0 15px;
+    }
+    #infoSupProject #left > div:nth-child(2) {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #closeIndic {
+        display: none;
     }
 }
 @media screen and (max-width: 670px) {
@@ -425,8 +516,29 @@ overflow-y: scroll;}
         font-size: 2.1em;
     }
 }
+@media screen and (max-width: 600px) {
+    .projects__information section {
+        justify-content: flex-start;
+    }
+    #infoSupProject div #left section {
+        justify-content: flex-start;
+    }
+    .projects__information section div:first-child {
+        margin: 0 15px 0 0;
+    }
+    .projects__information section div:last-child {
+        margin: 0 0 0 15px;
+    }
+    .projects__information {
+        margin: 0 0;
+    }
+}
 @media screen and (max-width: 570px) {
     .projects__presentation {
+        width: 90%;
+    }
+    #infoSupProject #left,
+    #infoSupProject #right {
         width: 90%;
     }
 }
@@ -434,8 +546,12 @@ overflow-y: scroll;}
     .projects__presentation {
         width: 97%;
     }
-    .projects__presentation__text{
+    .projects__presentation__text {
         flex-direction: column-reverse;
         align-items: center;
+    }
+    #infoSupProject #left,
+    #infoSupProject #right {
+        width: 97%;
     }
 }
