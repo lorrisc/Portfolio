@@ -83,7 +83,7 @@ body {
     flex-direction: row;
 }
 .projects:first-child {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .projects:last-child {
     margin-bottom: 20%;

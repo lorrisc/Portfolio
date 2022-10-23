@@ -24,6 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 listLettter[element].style.backgroundColor = "#0E0F0E";
             }, timeEvent);
         }
+
         function writeCommande() {
             let randomTime = Math.random() * (85 - 45) + 45;
             let letter;
