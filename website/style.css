@@ -118,11 +118,18 @@ nav {
     font-size: 0.8em;
     font-weight: 700;
     z-index: 100;
+
 }
 nav a {
     padding: 10px 24px;
     border-radius: 90px;
     color: white;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 nav a:nth-child(1) {
     margin-right: 3px;
@@ -219,4 +226,15 @@ nav a.active {
     z-index: 20;
     position: absolute;
     border-radius: 100px;
+}
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+nav{
+
+}
+
 }
