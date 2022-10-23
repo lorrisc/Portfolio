@@ -6,6 +6,7 @@
 body {
     display: flex;
     justify-content: center;
+    max-width: 100vw;
 }
 
 @font-face {
@@ -62,6 +63,7 @@ body {
 #carrousel {
     max-width: 1500px;
     width: 70%;
+    min-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,6 +172,8 @@ svg {
     position: fixed;
     bottom: 0;
     z-index: -1;
+    left: 0;
+    width: 100%;
 }
 
 /** -------------------- OPEN PROJECT */
@@ -333,4 +337,32 @@ svg {
 #triangleRight {
     border-width: 12.5px 0 12.5px 21.7px;
     border-color: transparent transparent transparent white;
+}
+
+/** -------------------- RESPONSIVE MEDIA QUERIES */
+
+@media screen and (max-width: 1600px) {
+    .projects__information {
+        width: auto;
+    }
+    .projects {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .projects__information {
+        margin: 0 30px;
+    }
+    .projects__presentation {
+        margin: 0 30px;
+    }
+    .projects {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .projects__presentation {
+        width: 40%;
+    }
 }
