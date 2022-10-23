@@ -63,7 +63,7 @@ body {
 #carrousel {
     max-width: 1500px;
     width: 70%;
-    min-width: 1200px;
+    /* min-width: 1200px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,7 +187,8 @@ svg {
 
     z-index: 100;
     display: flex;
-}
+
+overflow-y: scroll;}
 #infoSupProject > div {
     display: flex;
 }
@@ -360,9 +361,81 @@ svg {
     .projects {
         justify-content: center;
     }
+    .credit{
+        /* position: relative;
+        bottom: auto;
+        right: auto; */
+        display: none;
+    }
 }
 @media screen and (max-width: 1250px) {
+    #carrousel {
+        width: 75%;
+    }
+    .projects__presentation h2 {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 1150px) {
+    #carrousel {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    #carrousel {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 950px) {
+    #carrousel {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 870px) {
+    .projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 45px 0;
+    }
+    .projects__information {
+        width: 80%;
+    }
     .projects__presentation {
-        width: 40%;
+        width: 60%;
+    }
+    #advancementInPage{
+        display: none;
+    }
+    .projects__presentation__text{
+        margin-bottom: 30px;
+    }
+    
+}
+@media screen and (max-width: 770px) {
+    .projects__presentation {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 670px) {
+    .projects__presentation {
+        width: 80%;
+    }
+    .projects__presentation h2 {
+        font-size: 2.1em;
+    }
+}
+@media screen and (max-width: 570px) {
+    .projects__presentation {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 470px) {
+    .projects__presentation {
+        width: 97%;
+    }
+    .projects__presentation__text{
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
