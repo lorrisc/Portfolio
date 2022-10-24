@@ -8,6 +8,8 @@ projectList.forEach(function (element, index) {
 
     let projectDivImg = create("div", projectPresentation, null, "projects__presentation__image", null);
     let projectImg = create("img", projectDivImg, null, null, null);
+    projectImg.setAttribute("loading", "lazy");
+
     projectImg.src = element.linkimage[0];
 
     let projectDivInfo = create("div", projectPresentation, null, "projects__presentation__text", null);
