@@ -353,9 +353,10 @@ svg {
 @media screen and (max-width: 1600px) {
     .projects__information {
         width: auto;
+        margin: 0 35px;
     }
     .projects {
-        justify-content: space-evenly;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 1500px) {
@@ -390,12 +391,6 @@ svg {
 }
 
 @media screen and (max-width: 1450px) {
-    .projects__information {
-        margin: 0 30px;
-    }
-    .projects__presentation {
-        margin: 0 30px;
-    }
     .projects {
         justify-content: center;
     }
@@ -464,12 +459,12 @@ svg {
         margin: 45px 0;
     }
     .projects__information {
-        width: 90%;
+        width: 100%;
         margin: 0;
         align-self: flex-start;
     }
     .projects__presentation {
-        width: 90%;
+        width: 75%;
     }
     #advancementInPage {
         display: none;
@@ -483,9 +478,9 @@ svg {
     }
     .projects__information section {
         display: flex;
-        justify-content: flex-start;
-        width: 90%;
-        margin: 0 30px;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0 auto;
     }
     .projects__information section div {
         margin: 0 25px;
@@ -532,7 +527,7 @@ svg {
     .projects__information section div {
         justify-content: center;
         align-items: center;
-        text-align: center;
+        width: 70%;
     }
     .projects__information {
         align-self: center;
@@ -549,6 +544,9 @@ svg {
     }
     .projects__presentation h2 {
         font-size: 2.1em;
+    }
+    .projects__information section div {
+        width: 80%;
     }
 }
 @media screen and (max-width: 600px) {
@@ -576,14 +574,20 @@ svg {
     #infoSupProject #right {
         width: 85%;
     }
+    .projects__information section div {
+        width: 90%;
+    }
 }
+
 @media screen and (max-width: 470px) {
     .projects__presentation {
-        width: 97%;
+        width: 95%;
+    }
+    .projects__information section div {
+        width: 95%;
     }
     .projects__presentation__text {
         flex-direction: column-reverse;
-        align-items: center;
     }
     #infoSupProject #left,
     #infoSupProject #right {
@@ -591,9 +595,6 @@ svg {
     }
     .projects:first-child {
         margin-top: 10vh;
-    }
-    .projects__presentation h2 {
-        text-align: center;
     }
 }
 
