@@ -58,7 +58,7 @@ window.addEventListener("DOMContentLoaded", () => {
                         document.body.classList.remove("noscroll");
                     }, 300);
                 }, 250);
-            }
+            } 
         }
         writeCommande();
         //*now the site is already open (if user go on about page and recoming on home)
