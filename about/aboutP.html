@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lorris Crappier</title>
+
+        <!--* STYLE SHEET -->
         <link rel="stylesheet" href="../style.css" />
         <link rel="stylesheet" href="aboutS.css" />
 
@@ -17,16 +19,18 @@
         <meta name="msapplication-TileColor" content="#2d89ef" />
         <meta name="theme-color" content="#ffffff" />
 
-
+        <!--* AOS ANIMATION -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
     <body>
+        <!--* AOS ANIMATION -->
         <script>
             AOS.init();
         </script>
-        <section id="container"data-aos="zoom-in">
-            <img src="../assets/aboutAssets/photo2.jpg"/>
+
+        <section id="container" data-aos="zoom-in">
+            <img src="../assets/aboutAssets/photo2.jpg" />
             <h1>Lorris CRAPPIER</h1>
             <p>Bonjour, étudiant en 2ème année de BUT informatique à l’IUT d’Annecy. Je prévoit de réaliser le parcours administration, gestion et exploitation des données dès le semestre 4 (fin janvier 2023).</p>
             <p>Je suis actuellement à la recherche d’un stage dans le domaine de la donnée. Celui-ci devra être d’une durée de 8 à 12 semaine, la date de début de stage est prévu au lundi 11 avril 2023.</p>
@@ -35,6 +39,7 @@
             <a id="curriculumVitae" href="../assets/aboutAssets/curriculumVitae.pdf" target="_blank">Curriculum vitæ</a>
         </section>
 
+        <!--* BACKGROUND -->
         <div id="backgroundAbout">
             <img src="../assets/wave.svg" alt="" />
             <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -43,23 +48,23 @@
             <div id="rectForBottom"></div>
         </div>
 
+        <!--* SCROLL INDICATOR -->
         <section id="advancementInPage">
             <div id="scrollIndicator"></div>
         </section>
 
+        <!--* NAVBAR BOTTOM -->
         <nav>
             <a id="buttonProjects">Projects</a>
             <a id="aboutProjects" class="active">About me</a>
         </nav>
 
+        <!--* TRANSITION BETWEEN WEBSITE PAGE -->
         <div class="pageTransition desactive"></div>
 
-        <!-- particles.js container -->
+        <!--* PARTICLES -->
         <div id="particles-js"></div>
-        <!-- stats - count particles -->
-        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <!-- stats.js lib -->
         <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
         <script src="../main.js"></script>
