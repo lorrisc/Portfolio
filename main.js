@@ -9,14 +9,12 @@ function create(tag, parent, text = null, classs = null, id = null) {
     return element;
 }
 
+//*user mouse
 let newCursor = create("div", document.body, null, "cursor", null);
-
 const cursor = document.querySelector(".cursor");
-
 document.addEventListener("mousemove", (e) => {
     cursor.setAttribute("style", "top: " + (e.pageY - 17) + "px; left: " + (e.pageX - 17) + "px;");
 });
-
 document.addEventListener("mousedown", () => {
     cursor.classList.add("click");
     document.addEventListener("mouseup", () => {
@@ -24,17 +22,10 @@ document.addEventListener("mousedown", () => {
     });
 });
 
+//*bottom navbar
 let navLink = document.querySelectorAll("nav a");
-
-let pageTransition = document.querySelector(".pageTransition");
-function createTransition() {
-    pageTransition.classList.remove("desactive");
-    pageTransition.classList.add("animationSlideUp");
-    setTimeout(() => {
-        pageTransition.classList.add("endAnimation");
-    }, 400);
-}
 navLink.forEach((element, index) => {
+    //*cursor style
     element.addEventListener("mouseenter", () => {
         cursor.classList.add("mouseHover");
     });
@@ -44,23 +35,22 @@ navLink.forEach((element, index) => {
     element.addEventListener("click", () => {
         actualLinkPage = window.location.href;
         if (index == 0) {
+            //*ask link is project page
             askPage = "index.html";
             if (actualLinkPage.includes(askPage)) {
                 console.log("same page");
             } else {
-                // pageTransition.classList.add("pageTransition");
                 createTransition();
-                console.log("sropikhvrpoise");
                 setTimeout(() => {
                     window.location.href = "../index.html";
                 }, 850);
             }
         } else if (index == 1) {
+            //*ask link is project page
             askPage = "aboutP.html";
             if (actualLinkPage.includes(askPage)) {
                 console.log("same page");
             } else {
-                // pageTransition.classList.add("pageTransition");
                 createTransition();
                 setTimeout(() => {
                     window.location.href = "about/aboutP.html";
@@ -70,6 +60,17 @@ navLink.forEach((element, index) => {
     });
 });
 
+//*transition between page
+let pageTransition = document.querySelector(".pageTransition");
+function createTransition() {
+    pageTransition.classList.remove("desactive");
+    pageTransition.classList.add("animationSlideUp");
+    setTimeout(() => {
+        pageTransition.classList.add("endAnimation");
+    }, 400);
+}
+
+//*credit
 let creditContainer = create("div", document.body, null, "credit", null);
 let creditText = "Developed by Lorris Crappier";
 let creditTextArray = creditText.split("");
@@ -80,8 +81,9 @@ creditTextArray.forEach((element) => {
     } else {
         let letter = create("p", creditContainer, element, null, null);
     }
-}); 
+});
 
+//*credit on hover
 let colorElement = [
     "#BBFF00",
     "#BBFF00",
@@ -130,17 +132,9 @@ creditContainer.addEventListener("mouseenter", (e) => {
     }
     colorElementFunct();
 });
-// creditContainer.addEventListener("mouseleave", (e) => {
-//     leave = true;
-//     creditLetter.forEach((element, index) => {
-//         element.style.color = "#939393";
-//     });
-//     setTimeout(() => {
-//         leave = false;
-//     }, 1000);
-// });
 
-let scrollDown = document.querySelector("#scrollDown");
+//*scroll indicator
+let scrollDown = document.querySelector("#scrollDown"); //bottom text indicator
 let scrollValue = [0];
 
 addEventListener("scroll", function () {
@@ -156,6 +150,7 @@ addEventListener("scroll", function () {
     let scrollIndicator = document.querySelector("#scrollIndicator");
     scrollIndicator.style.height = scrolled + "%";
 
+    //bottom text indicator
     if (scrollDown) {
         scrollDown.classList.add("notActive");
     }
