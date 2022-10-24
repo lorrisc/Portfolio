@@ -197,3 +197,24 @@ nav a.active {
     position: absolute;
     border-radius: 100px;
 }
+
+
+
+/** -------------------- MEDIAQUERIES */
+@media screen and (max-width: 768px) {
+    .cursor{
+        visibility:hidden;
+    }
+    #advancementInPage{
+        visibility:hidden;
+    }
+}
+@media screen and (max-width: 425px) {
+    nav{
+        min-width: 70%;
+    }
+    nav a{
+        padding: 10px 0;
+        width: 50%;
+    }
+}

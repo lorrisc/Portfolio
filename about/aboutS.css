@@ -240,9 +240,6 @@ a#mailLink:hover:after {
     }
 }
 @media screen and (max-width: 800px) {
-    #container {
-        width: 85%;
-    }
     #container img {
         width: 142px;
     }
@@ -261,9 +258,6 @@ a#mailLink:hover:after {
     }
 }
 @media screen and (max-width: 500px) {
-    #container {
-        width: 90%;
-    }
     #container img {
         width: 122px;
     }
