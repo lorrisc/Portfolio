@@ -80,7 +80,7 @@ creditTextArray.forEach((element) => {
     } else {
         let letter = create("p", creditContainer, element, null, null);
     }
-});
+}); 
 
 let colorElement = [
     "#BBFF00",
