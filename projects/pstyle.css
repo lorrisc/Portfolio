@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
 /* font-family: 'Lobster Two', cursive; */
+@font-face {
+    font-family: "LoraBold";
+    src: url("../assets/fonts/lora/Lora-Bold.ttf");
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -8,11 +13,7 @@ body {
     justify-content: center;
     max-width: 100vw;
 }
-
-@font-face {
-    font-family: "LoraBold";
-    src: url("../assets/fonts/lora/Lora-Bold.ttf");
-}
+/**----------------------- LOADER */
 #loader {
     position: fixed;
     width: 100%;
@@ -60,6 +61,7 @@ body {
     margin-left: 50px;
 }
 
+/** -------------------- PROJECT CONTAINER */
 #carrousel {
     max-width: 1500px;
     width: 70%;
@@ -123,6 +125,7 @@ body {
     font-size: 0.9em;
     color: #939393;
 }
+
 /** -------------------- PROJECT INFORMATION */
 .projects__information {
     display: flex;
@@ -147,6 +150,7 @@ body {
     align-items: flex-end;
 }
 
+/** -- SCROLL BOTTOM TEXT INDICATOR */
 #scrollDown {
     position: fixed;
     bottom: 105px;
@@ -168,6 +172,7 @@ body {
     }
 }
 
+/** -------------------- SVG */
 svg {
     position: fixed;
     bottom: 0;
@@ -524,7 +529,7 @@ svg {
     .projects__information section div:last-child {
         margin: 10px 0;
     }
-    .projects__information section div{
+    .projects__information section div {
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -584,10 +589,10 @@ svg {
     #infoSupProject #right {
         width: 97%;
     }
-    .projects:first-child{
+    .projects:first-child {
         margin-top: 10vh;
     }
-    .projects__presentation h2{
+    .projects__presentation h2 {
         text-align: center;
     }
 }
