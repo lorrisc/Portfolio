@@ -34,6 +34,7 @@ body {
     background-color: #0e0f0e;
     color: white;
     cursor: none;
+    margin: 0 auto;
 }
 a {
     color: inherit;
@@ -226,15 +227,4 @@ nav a.active {
     z-index: 20;
     position: absolute;
     border-radius: 100px;
-}
-
-
-
-
-
-@media screen and (max-width: 1300px) {
-nav{
-
-}
-
 }

@@ -459,10 +459,12 @@ svg {
         margin: 45px 0;
     }
     .projects__information {
-        width: 80%;
+        width: 90%;
+        margin: 0;
+        align-self: flex-start;
     }
     .projects__presentation {
-        width: 60%;
+        width: 90%;
     }
     #advancementInPage {
         display: none;
@@ -476,14 +478,20 @@ svg {
     }
     .projects__information section {
         display: flex;
-        justify-content: space-around;
-        width: 100%;
-        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 90%;
+        margin: 0 30px;
     }
     .projects__information section div {
-        margin: 0 15px;
+        margin: 0 25px;
     }
-    .projects:last-child{
+    .projects__information section div:first-child {
+        margin: 0 25px 0 0;
+    }
+    .projects__information section div:last-child {
+        margin: 0 0 0 25px;
+    }
+    .projects:last-child {
         margin-bottom: 25vh;
     }
 }
@@ -504,6 +512,25 @@ svg {
     }
     #infoSupProject #left > div:nth-child(2) {
         width: 100%;
+    }
+    .projects__information section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .projects__information section div,
+    .projects__information section div:first-child,
+    .projects__information section div:last-child {
+        margin: 10px 0;
+    }
+    .projects__information section div{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .projects__information {
+        align-self: center;
     }
 }
 @media screen and (max-width: 768px) {
@@ -526,12 +553,12 @@ svg {
     #infoSupProject div #left section {
         justify-content: flex-start;
     }
-    .projects__information section div:first-child {
+    /* .projects__information section div:first-child {
         margin: 0 15px 0 0;
     }
     .projects__information section div:last-child {
         margin: 0 0 0 15px;
-    }
+    } */
     .projects__information {
         margin: 0 0;
     }
@@ -556,5 +583,11 @@ svg {
     #infoSupProject #left,
     #infoSupProject #right {
         width: 97%;
+    }
+    .projects:first-child{
+        margin-top: 10vh;
+    }
+    .projects__presentation h2{
+        text-align: center;
     }
 }
