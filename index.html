@@ -5,10 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lorris Crappier</title>
+
+        <!--* STYLE SHEET -->
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="projects/pstyle.css" />
         <link rel="stylesheet" href="projects/style.css" />
+        <!--* PARTICLES -->
         <link rel="stylesheet" href="projects/style.scss" />
+
+        <!--* AOS ANIMATION -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -22,32 +27,36 @@
         <meta name="theme-color" content="#ffffff" />
     </head>
     <body>
+        <!--* AOS ANIMATION -->
         <script>
             AOS.init();
         </script>
+
         <section id="loader"></section>
-
         <section id="carrousel"></section>
-
+        <!--* PAGE SCROLLING INDICATOR -->
         <section id="advancementInPage">
             <div id="scrollIndicator"></div>
         </section>
+        <!--* BOTTOM NAV -->
         <nav>
             <a id="buttonProjects" class="active">Projects</a>
             <a id="aboutProjects">About me</a>
         </nav>
+        <!--* PAGE TRANSITION -->
         <div class="pageTransition desactive"></div>
-
-        <!-- <div class="cursor">
-        </div> -->
         <p id="scrollDown">(Scroll down)</p>
 
+        <!--* FIRST CONNEXION ANIMATION (LINUX COMMAND) -->
         <script src="loader.js"></script>
-        <script src="projects/projectList.js"></script>
+        <!--* PRINCIPAL SCRIPT FOR WEBSITE -->
         <script src="main.js"></script>
-        <script src="traiterdata.js"></script>
+        <!--* PROJECT LIST -->
+        <script src="projects/projectList.js"></script>
+        <!--* CREATE PROJECT -->
         <script src="projects/pmain.js"></script>
 
+        <!--* BOTTOM SVG -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
                 fill="#171717"
@@ -55,6 +64,7 @@
                 d="M0,224L60,213.3C120,203,240,181,360,192C480,203,600,245,720,250.7C840,256,960,224,1080,218.7C1200,213,1320,235,1380,245.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
             ></path>
         </svg>
+        <!--* BACKGROUND PARTICLES -->
         <div id="particle-container">
             <div class="particle"></div>
             <div class="particle"></div>
@@ -68,25 +78,6 @@
             <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
-            <!--<div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div> -->
-            <!-- <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div> -->
         </div>
-
     </body>
 </html>
