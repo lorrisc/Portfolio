@@ -1,3 +1,4 @@
+//*--------------- CREATE ELEMENT
 let projectContainer = document.querySelector("#carrousel");
 projectList.forEach(function (element, index) {
     let newProject = create("article", projectContainer, null, "projects", null);
@@ -40,6 +41,7 @@ projectList.forEach(function (element, index) {
     }
 });
 
+//* MOUSE ANIMATION ON HOVER PROJECT
 let projectPresentation = document.querySelectorAll(".projects__presentation");
 let clickForSee = document.querySelectorAll(".projects__presentation__text p");
 
@@ -54,9 +56,11 @@ projectPresentation.forEach((element, index) => {
     });
 });
 
+//*--------------- OPEN THE PROJECT FOR MORE INFORMATION
 let projectForClick = document.querySelectorAll(".projects__presentation");
 projectForClick.forEach((element, index) => {
     element.addEventListener("click", () => {
+        //*CREATE ELEMENT
         let container = create("section", document.body, null, null, "infoSupProject");
         container.setAttribute("data-aos", "flip-down");
 
@@ -86,6 +90,7 @@ projectForClick.forEach((element, index) => {
             let p = create("p", textProject, projectList[index].description[i], null, null);
         }
 
+        //*PROJECT LINK
         let divLink = create("div", oprojectRight, null, null, "openProject");
         for (let i = 0; i < projectList[index].linkproject.length; i++) {
             let a = create("a", divLink, null, null, "projectLink");
@@ -101,6 +106,7 @@ projectForClick.forEach((element, index) => {
             });
         }
 
+        //*CLOSE BUTTON
         let closeIndic = create("p", document.body, "Escape for close project", null, "closeIndic");
         let closeButton = create("p", document.body, "Close project", null, "closeProjectText");
         document.body.style.overflowY = "hidden";
@@ -117,12 +123,14 @@ projectForClick.forEach((element, index) => {
         });
 
         if (projectList[index].linkimage.length > 1) {
+            //*CREATE SLIDER
             let buttonImg = create("div", divContainerImg, null, null, "buttonImg");
             let divLeftImg = create("div", buttonImg, null, null, "leftImg");
             let triangleLeft = create("div", divLeftImg, null, "triangleButton", "triangleLeft");
             let divRightImg = create("div", buttonImg, null, null, "rightImg");
             let triangleRight = create("div", divRightImg, null, "triangleButton", "triangleRight");
 
+            //*CHANGE IMAGE
             let imgIndex = 0;
             divLeftImg.addEventListener("click", () => {
                 if (imgIndex > 0) {
