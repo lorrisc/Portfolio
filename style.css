@@ -35,6 +35,7 @@ body {
     color: white;
     cursor: none;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 a {
     color: inherit;
@@ -98,8 +99,7 @@ nav a {
     padding: 10px 24px;
     border-radius: 90px;
     color: white;
-    
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,22 +198,20 @@ nav a.active {
     border-radius: 100px;
 }
 
-
-
 /** -------------------- MEDIAQUERIES */
 @media screen and (max-width: 768px) {
-    .cursor{
-        visibility:hidden;
+    .cursor {
+        visibility: hidden;
     }
-    #advancementInPage{
-        visibility:hidden;
+    #advancementInPage {
+        visibility: hidden;
     }
 }
 @media screen and (max-width: 425px) {
-    nav{
+    nav {
         min-width: 70%;
     }
-    nav a{
+    nav a {
         padding: 10px 0;
         width: 50%;
     }
