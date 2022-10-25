@@ -577,6 +577,12 @@ svg {
     .projects__information section div {
         width: 90%;
     }
+    #loader p:nth-child(1){
+        margin-left: 15px;
+    }
+    #loader p{
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 470px) {
