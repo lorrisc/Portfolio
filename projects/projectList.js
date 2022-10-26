@@ -8,7 +8,7 @@ let projectList = [
             "Ce petit jeu vidéo jouable sur navigateur à été réalisé avec Phaser 3, un framework JavaScript. Le but du jeu est de récolter les pièces en légo tous en évitant des missiles, des avions et les boules de feu de Wario. Il est possible de tuer Wario en lui tirant dessus. Mais... Wario est très fort est réapparait souvent ! Il est possible de voler, ainsi que de se déplacer.",
             "Ce petit projet à été développé dans le cadre de mon BUT informatique.",
         ],
-        linkimage: ["projects/images/phaserLego/gameScreen.PNG"],
+        linkimage: ["projects/images/phaserLego/gameScreen.jpg"],
         linkproject: [],
     },
     {
@@ -32,7 +32,7 @@ let projectList = [
         description: [
             "Ce site web permet de visualiser et commander des billets de trains. Il s'inscrit dans le cadre de ma première année de BUT informatique à Valence. Il nous était fourni un serveur pour pouvoir récupérer les différentes informations. Nous pouvions aussi intéragir avec celui-ci pour se connecter à un profil client, ou procéder au paiement de un ou plusieurs billets de train.",
         ],
-        linkimage: ["projects/images/traintravel/1market.png", "projects/images/traintravel/2search.png", "projects/images/traintravel/3result.png", "projects/images/traintravel/4inteMaps.png", "projects/images/traintravel/5bestsales.png"],
+        linkimage: ["projects/images/traintravel/1market.jpg", "projects/images/traintravel/2search.jpg", "projects/images/traintravel/3result.jpg", "projects/images/traintravel/4inteMaps.jpg", "projects/images/traintravel/5bestsales.jpg"],
         linkproject: [
             ["Visit the website (limited functionality)", "https://noix2kgouu.github.io/TrainTravel/"],
             ["Github", "https://github.com/noix2kgouu/TrainTravel"],
