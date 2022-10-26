@@ -15,6 +15,20 @@ let projectList = [
         ],
     },
     {
+        name: "Test de mémoire visuelle",
+        date: "Sept. 2022",
+        roles: "Dev",
+        techs: "Html, Css, Js",
+        description: [
+            "Ce simple projet personnel (inspiré de humanbenchmark.com) m'a permis de développé un premier petit jeu vidéo. Le but est de retrouver les tuiles qui ont été affiché, plus on avance dans les manches, plus le nombre de tuiles augmente.",
+        ],
+        linkimage: ["projects/images/visualMemory/2.png", "projects/images/visualMemory/1.png"],
+        linkproject: [
+            ["Test the game", "https://lorrisc.github.io/Test-de-memoire-visuelle/"],
+            ["Github", "https://github.com/lorrisc/Test-de-memoire-visuelle"],
+        ],
+    },
+    {
         name: "MondialMeteo",
         date: "Juin 2022",
         roles: "Dev",
@@ -54,7 +68,7 @@ let projectList = [
             "Nous avons utilisé du matériel Arduino, des capteurs (capteur de température, capteur pH-mètre, capteur de luminosité) pour concevoir un système permettant de surveillé les sarcophages.",
             "Ce projet a été réalisé en groupe de 4. Deux élèves de STI2D SIN (dont moi) pour la partie informatique, et deux élèves de STI2D ITEC pour concevoir la boite qui accueillera notre système (plongé à 10 mètre sous l'eau, 365 jours par ans). Ce premier important projet nous a également permis de découvrir la gestion de projet.",
         ],
-        linkimage: ["projects/images/sarcophage/sarcophage.jpg"],
+        linkimage: ["projects/images/sarcophage/sarcophage.jpg","projects/images/sarcophage/realisation.jpg"],
         linkproject: [],
     },
 ];
