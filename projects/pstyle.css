@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
-/* font-family: 'Lobster Two', cursive; */
 @font-face {
-    font-family: "LoraBold";
-    src: url("../assets/fonts/lora/Lora-Bold.ttf");
+    font-family: "Lobster Two";
+    src: url("../assets/fonts/Lobster_Two/LobsterTwo-Regular.ttf");
+}
+@font-face {
+    font-family: "Alata";
+    src: url("../assets/fonts/Alata/Alata-Regular.ttf");
 }
 
 ::-webkit-scrollbar {

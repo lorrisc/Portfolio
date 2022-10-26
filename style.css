@@ -1,8 +1,4 @@
 @font-face {
-    font-family: "LivvicRegular";
-    src: url("assets/fonts/Livvic/Livvic-Regular.ttf");
-}
-@font-face {
     font-family: "LinuxBiolinum";
     src: url("assets/fonts/linux-biolinum-g.ttf");
 }
@@ -10,16 +6,6 @@
     font-family: "LivvicThin";
     src: url("assets/fonts/Livvic/Livvic-Thin.ttf");
 }
-@font-face {
-    font-family: "BrixtonTC";
-    src: url("assets/fonts/BrixtonTc.otf");
-}
-@font-face {
-    font-family: "CalendasPlus";
-    src: url("assets/fonts/Calendas_Plus.otf");
-}
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
 * {
     margin: 0;
