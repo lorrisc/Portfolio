@@ -4,9 +4,6 @@ body {
     display: flex;
     justify-content: center;
 }
-::-webkit-scrollbar {
-    display: none;
-}
 #container {
     z-index: 10;
     width: 45%;

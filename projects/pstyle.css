@@ -7,9 +7,7 @@
     src: url("../assets/fonts/Alata/Alata-Regular.ttf");
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+
 body {
     display: flex;
     justify-content: center;
