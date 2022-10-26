@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "LoraBold";
+    src: url("../assets/fonts/lora/Lora-Bold.ttf");
+}
 /**----------------------- LOADER */
 #loader {
     position: fixed;
