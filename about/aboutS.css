@@ -1,6 +1,7 @@
 @font-face {
     font-family: "LivvicRegular";
     src: url("../assets/fonts/Livvic/Livvic-Regular.ttf");
+    font-display: swap;
 }
 
 body {
@@ -32,7 +33,6 @@ h1 {
     letter-spacing: 5px;
     margin-bottom: 90px;
     font-family: "LivvicRegular";
-    font-display:"swap";
     text-align: center;
 }
 #container p,
@@ -41,7 +41,6 @@ h1 {
     margin-bottom: 20px;
     line-height: 140%;
     font-family: "LivvicRegular";
-    font-display:"swap";
     text-align: justify;
     align-self: flex-start;
 }

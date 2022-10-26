@@ -1,10 +1,12 @@
 @font-face {
     font-family: "LinuxBiolinum";
     src: url("assets/fonts/linux-biolinum-g.ttf");
+    font-display: swap;
 }
 @font-face {
     font-family: "LivvicThin";
     src: url("assets/fonts/Livvic/Livvic-Thin.ttf");
+    font-display: swap;
 }
 
 * {
@@ -83,7 +85,6 @@ nav {
     padding: 3px;
 
     font-family: LivvicThin;
-    font-display:"swap";
     font-size: 0.8em;
     font-weight: 700;
     z-index: 100;
@@ -165,7 +166,6 @@ nav a.active {
     bottom: 10px;
     right: 10px;
     font-family: "LinuxBiolinum", cursive;
-    font-display:"swap";
     color: #939393;
     z-index: 100;
 

@@ -1,10 +1,12 @@
 @font-face {
     font-family: "Lobster Two";
     src: url("../assets/fonts/Lobster_Two/LobsterTwo-Regular.ttf");
+    font-display: swap;
 }
 @font-face {
     font-family: "Alata";
     src: url("../assets/fonts/Alata/Alata-Regular.ttf");
+    font-display: swap;
 }
 
 
@@ -72,13 +74,11 @@ body {
     font-family: "Lobster Two", cursive;
     font-size: 2.8em;
     z-index: 10;
-    font-display:"swap";
 }
 .projects__presentation p {
     font-family: "LinuxBiolinum", cursive;
     font-size: 0.9em;
     color: #939393;
-    font-display:"swap";
 }
 
 /** -------------------- PROJECT INFORMATION */
@@ -90,7 +90,6 @@ body {
 .projects__information div {
     margin-bottom: 22px;
     font-family: "LinuxBiolinum", cursive;
-    font-display:"swap";
 }
 .projects__information h3 {
     font-size: 1.1em;
@@ -111,7 +110,6 @@ body {
     position: fixed;
     bottom: 105px;
     font-family: "LinuxBiolinum", cursive;
-    font-display:"swap";
     font-size: 0.7em;
     color: #939393;
     letter-spacing: 1px;
@@ -172,7 +170,6 @@ svg {
 }
 #infoSupProject #left h2 {
     font-family: "Lobster Two", cursive;
-    font-display:"swap";
     font-size: 2.3em;
     z-index: 10;
     margin-top: -95px;
@@ -237,7 +234,6 @@ svg {
 #closeIndic,
 #closeProjectText {
     font-family: "LinuxBiolinum", cursive;
-    font-display:"swap";
     font-size: 1.1em;
     color: #939393;
     z-index: 100000;
