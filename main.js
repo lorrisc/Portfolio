@@ -70,6 +70,39 @@ function createTransition() {
     }, 400);
 }
 
+//*left link button
+let containerButton = create("section", document.body, null, "containerButton")
+
+let CVbutton = create("a", containerButton, null, "leftButton");
+let CVIconButton = create("i",CVbutton, null )
+CVIconButton.classList.add("fa-solid")
+CVIconButton.classList.add("fa-file-lines")
+CVIconButton.classList.add("fa-xl")
+CVbutton.href='/assets/aboutAssets/curriculumVitae.pdf'
+CVbutton.setAttribute("target", "_blank");
+
+
+let githubButton = create("a", containerButton, null, "leftButton");
+let githubIconButton = create("i",githubButton, null )
+githubIconButton.classList.add("fa-brands")
+githubIconButton.classList.add("fa-github")
+githubIconButton.classList.add("fa-xl")
+githubButton.href='https://github.com/lorrisc'
+githubButton.setAttribute("target", "_blank");
+
+//* MOUSE ANIMATION ON HOVER LINK
+let buttonLink = document.querySelectorAll(".leftButton");
+
+buttonLink.forEach((element, index) => {
+    element.addEventListener("mouseenter", () => {
+        cursor.classList.add("mouseHover");
+    });
+    element.addEventListener("mouseleave", () => {
+        cursor.classList.remove("mouseHover");
+    });
+});
+
+
 //*credit
 let creditContainer = create("div", document.body, null, "credit", null);
 let creditText = "Developed by Lorris Crappier";
