@@ -82,6 +82,7 @@ CVbutton.href='/assets/aboutAssets/curriculumVitae.pdf'
 CVbutton.setAttribute("target", "_blank");
 
 
+
 let githubButton = create("a", containerButton, null, "leftButton");
 let githubIconButton = create("i",githubButton, null )
 githubIconButton.classList.add("fa-brands")
