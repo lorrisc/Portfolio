@@ -5,9 +5,9 @@ let projectList = [
         roles: "Design, Dev",
         techs: "Php, Sql, Html, Css, Js",
         description: [
-            "ByLocalis est un projet personnel, c'est un réseau social. Ce réseau social permet de publier des posts en incluant une localisation. Les autres utilisateurs pourront voir le post s'ils se situent dans la localisation indiquée par le post. Ils peuvent également le voir en spécifiant la localisation exacte.",
-            "Il est obligatoire de localiser un post puisqu'il n'y a pas de principe d'abonnement entre utilisateur. La localisation peut être un pays, une région, un département ou une ville. Pratique pour visualiser l'actualité proche de soit.",
-            "ByLocalis est en cours de développement, les fonctionnalitées suivantes ont déjà été développées : connexion/inscription, page d'accueil (sans la partie principal des posts), paramètres (modification informations personnelles, mot de passe, photo de profil). Le lien vers le site web et le répertoire Github seront disponibles dès lors le développement achevé.",
+            "ByLocalis est un projet personnel, c'est un réseau social. Il permet de publier des posts en incluant une localisation. Les autres utilisateurs pourront voir le post s'ils se situent dans la localisation indiquée par le post. Ils peuvent également le voir en spécifiant la localisation exacte.",
+            "Il est obligatoire de localiser un post puisqu'il n'y a pas de principe d'abonnement entre utilisateur. La localisation peut être un pays, une région ou une ville. Pratique pour visualiser l'actualité proche de soit.",
+            "ByLocalis est en cours de développement, les fonctionnalités suivantes ont déjà été développées : connexion/inscription, page d'accueil (sans la partie principal des posts), paramètres (modification informations personnelles, mot de passe, photo de profil). Le lien vers le site web et le répertoire Github seront disponibles dès le développement achevé.",
         ],
         linkimage: ["projects/images/bylocalis/1settings.png", "projects/images/bylocalis/2settingsedit.png", "projects/images/bylocalis/3settingseditpwd.png", "projects/images/bylocalis/4connexion.png"],
         linkproject: [],
