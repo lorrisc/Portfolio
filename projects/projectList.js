@@ -7,9 +7,9 @@ let projectList = [
         description: [
             "ByLocalis est un projet personnel, c'est un réseau social. Il permet de publier des posts en incluant une localisation. Les autres utilisateurs pourront voir le post s'ils se situent dans la localisation indiquée par le post. Ils peuvent également le voir en spécifiant la localisation exacte.",
             "Il est obligatoire de localiser un post puisqu'il n'y a pas de principe d'abonnement entre utilisateur. La localisation peut être un pays, une région ou une ville. Pratique pour visualiser l'actualité proche de soit.",
-            "ByLocalis est en cours de développement, les fonctionnalités suivantes ont déjà été développées : connexion/inscription, page d'accueil (sans la partie principal des posts), paramètres (modification informations personnelles, mot de passe, photo de profil). Le lien vers le site web et le répertoire Github seront disponibles dès le développement achevé.",
+            "ByLocalis est en cours de développement, le lien vers le site web et le répertoire Github seront disponibles dès le développement achevé.",
         ],
-        linkimage: ["projects/images/bylocalis/1settings.png", "projects/images/bylocalis/2settingsedit.png", "projects/images/bylocalis/3settingseditpwd.png", "projects/images/bylocalis/4connexion.png"],
+        linkimage: ["projects/images/bylocalis/1.png", "projects/images/bylocalis/2.png", "projects/images/bylocalis/3.png", "projects/images/bylocalis/4.png", "projects/images/bylocalis/5.png", "projects/images/bylocalis/6.png", "projects/images/bylocalis/7.png", "projects/images/bylocalis/8.png"],
         linkproject: [],
     },
     {
