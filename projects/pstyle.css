@@ -234,7 +234,7 @@ svg {
 }
 
 #closeIndic,
-#closeProjectText {
+#closeProjectText, #closeProjectTextfs {
     font-family: "LinuxBiolinum", cursive;
     font-size: 1.1em;
     color: #939393;
@@ -248,11 +248,11 @@ svg {
     color: #939393;
 }
 
-#closeProjectText {
+#closeProjectText,#closeProjectTextfs {
     top: 20px;
     right: 20px;
 }
-#closeProjectText:hover {
+#closeProjectText:hover,#closeProjectTextfs:hover  {
     color: white;
 }
 
@@ -303,6 +303,29 @@ svg {
 #triangleRight {
     border-width: 12.5px 0 12.5px 21.7px;
     border-color: transparent transparent transparent white;
+}
+/** -------------------- OPEN PROJECT FULL SCREEN IMG */
+#imgContainerfs{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#imgContainerfs img{
+    width: 55vw;
+    border-radius: 10px;
+}
+#containerFS{
+    position: relative;
+}
+#containerFS #buttonImg{
+    transform: translate(0px, -50%);
 }
 
 /** -------------------- RESPONSIVE MEDIA QUERIES */

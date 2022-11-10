@@ -166,6 +166,97 @@ projectForClick.forEach((element, index) => {
             let allTitle = document.querySelector("#infoSupProject h2");
             allTitle.style.marginTop = "0px";
         }
+
+        //*FULL SCREEN IMG
+        if (window.screen.width >= 1300) {
+            let imgcarousel = document.querySelector("#imgContainer img");
+            function fullscreenimg(imageslinks) {
+                let divContainerImgFS = create("div", document.body, null, null, "imgContainerfs");
+                let containerFS = create("div", divContainerImgFS, null, null, "containerFS");
+                let imgProjectfs = create("img", containerFS, null, null, null);
+                imgProjectfs.src = projectList[index].linkimage[0];
+
+                let closeButtonfs = create("p", document.body, "Close images", null, "closeProjectTextfs");
+
+                closeButtonfs.addEventListener("mouseenter", () => {
+                    cursor.classList.add("mouseHover");
+                });
+                closeButtonfs.addEventListener("mouseleave", () => {
+                    cursor.classList.remove("mouseHover");
+                });
+                if (projectList[index].linkimage.length > 1) {
+                    //*CREATE SLIDER
+                    let buttonImgfs = create("div", containerFS, null, null, "buttonImg");
+                    let divLeftImgfs = create("div", buttonImgfs, null, null, "leftImg");
+                    let triangleLeftfs = create("div", divLeftImgfs, null, "triangleButton", "triangleLeft");
+                    let divRightImgfs = create("div", buttonImgfs, null, null, "rightImg");
+                    let triangleRightfs = create("div", divRightImgfs, null, "triangleButton", "triangleRight");
+
+                    //*CHANGE IMAGE
+                    let imgIndexfs = 0;
+                    divLeftImgfs.addEventListener("click", () => {
+                        if (imgIndexfs > 0) {
+                            imgIndexfs--;
+                            imgProjectfs.src = projectList[index].linkimage[imgIndexfs];
+                        } else {
+                            imgIndexfs = projectList[index].linkimage.length - 1;
+                            imgProjectfs.src = projectList[index].linkimage[imgIndexfs];
+                        }
+                    });
+                    divRightImgfs.addEventListener("click", () => {
+                        if (imgIndexfs < projectList[index].linkimage.length - 1) {
+                            imgIndexfs++;
+                            imgProjectfs.src = projectList[index].linkimage[imgIndexfs];
+                        } else {
+                            imgIndexfs = 0;
+                            imgProjectfs.src = projectList[index].linkimage[imgIndexfs];
+                        }
+                    });
+                    let rightLeftButton = document.querySelectorAll("#buttonImg > div");
+                    rightLeftButton.forEach((element) => {
+                        element.addEventListener("mouseenter", () => {
+                            cursor.classList.add("mouseHover");
+                        });
+                        element.addEventListener("mouseleave", () => {
+                            cursor.classList.remove("mouseHover");
+                        });
+                    });
+
+                    let rightLeftButtonfs = document.querySelectorAll("#buttonImgfs > div");
+                    rightLeftButtonfs.forEach((element) => {
+                        element.addEventListener("mouseenter", () => {
+                            cursor.classList.add("mouseHover");
+                        });
+                        element.addEventListener("mouseleave", () => {
+                            cursor.classList.remove("mouseHover");
+                        });
+                    });
+                }
+
+                function removeContainerfs() {
+                    divContainerImgFS.remove();
+
+                    closeProjectTextfs.remove();
+                }
+                document.addEventListener("keydown", (e) => {
+                    if (e.key == "Escape") {
+                        removeContainerfs();
+                    }
+                });
+                closeProjectTextfs.addEventListener("click", () => {
+                    removeContainerfs();
+                });
+            }
+            imgcarousel.addEventListener("click", () => {
+                fullscreenimg(projectList[index].linkimage);
+            });
+            imgcarousel.addEventListener("mouseenter", () => {
+                cursor.classList.add("mouseHover");
+            });
+            imgcarousel.addEventListener("mouseleave", () => {
+                cursor.classList.remove("mouseHover");
+            });
+        }
     });
 
     function removeContainer() {
