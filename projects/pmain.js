@@ -109,7 +109,7 @@ projectForClick.forEach((element, index) => {
         }
 
         //*CLOSE BUTTON
-        let closeIndic = create("p", document.body, "Escape for close project", null, "closeIndic");
+        let closeIndic = create("p", document.body, "Escape for close project - Click on image for fullscreen", null, "closeIndic");
         let closeButton = create("p", document.body, "Close project", null, "closeProjectText");
         document.body.style.overflowY = "hidden";
 
