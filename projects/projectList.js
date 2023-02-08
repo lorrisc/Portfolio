@@ -1,5 +1,18 @@
 let projectList = [
     {
+        name: "MonLogement",
+        date: "Fin Jan. 2023 - Aujourd'hui",
+        roles: "Dev, Design",
+        techs: "Laravel, phpMyAdmin, Js",
+        description: [
+            "MonLogement est un site web qui permet aux utilisateurs de rechercher et de trouver facilement des biens immobiliers en fonction de leurs besoins et de leur budget. Il offre une variété de filtres de recherche pour aider les utilisateurs à trouver le logement idéal, y compris le type de bien, le budget, la localisation et les caractéristiques du bien. Les utilisateurs peuvent également enregistrer des propriétés dans des favoris et créer des alertes pour être informés des nouvelles propriétés correspondant à leurs critères de recherche.",
+            "Les propriétaires peuvent également utiliser MonLogement pour publier leurs propriétés à louer ou à vendre et être en contact direct avec les utilisateurs intéressés. Les comptes professionnels pour les agences immobilières sont également disponibles pour une plus grande visibilité de leurs propriétés.",
+            "En cours de développement.",
+        ],
+        linkimage: ["projects/images/monlogement/1.png", "projects/images/monlogement/2.png", "projects/images/monlogement/3.png", "projects/images/monlogement/4.png", "projects/images/monlogement/5.png", "projects/images/monlogement/6.png"],
+        linkproject: [["Github", "https://github.com/lorrisc/monlogement"]],
+    },
+    {
         name: "Miliboo",
         date: "Oct. 2022 - Jan. 2023",
         roles: "Dev, Design",
@@ -7,9 +20,21 @@ let projectList = [
         description: [
             "Miliboo, projet qui a été réalisé dans le cadre de ma deuxième année de BUT informatique. Miliboo est une entreprise spécialisée dans la conception de meubles.",
             "Nous avons pour mission de réaliser une refonte complète du système d'information de Miliboo. La mission principale est de réaliser un nouveau site web pour la présentation et la vente des produits. Celui-ci doit également être un outil de suivi de gestion et de configuration des nouveaux produits.",
-            "À cinq nous avons mené ce projet agile, nous avons conçu la base de données (MCD, MLD, jeu de données, ...). Nous avons réalisé un dossier de conception et de spécification (diagrammes de collaboration, use case, diagramme de séquence, diagramme de classe métier, ...). Nous avons développé le projet sur Laravel 9. Nous avons également fourni un rapport sur des tests de sécurité élémentaire que nous avons réalisé. Nous avons également pour mission d'analyser les données du site en fournissant des rapports BI. La sécurité et la protection des données a également été pris en compte dans toutes les étapes du projet. Ainsi qu'une partie cryptographie.","Ce projet me permet de monter en compétences sur le framework Laravel 9. D'acquérir des compétences sur les méthodes agiles ainsi que sur toutes les étapes de la création d'un site web professionnel.","J'ai évidemment suivi et participé à toutes les étapes du développement du projet. J'ai personnellement développé entièrement et seul notamment la partie de création de compte, modification des informations du compte, gestion du panier. J'ai également en CSS réalisé le design du site.",
+            "À cinq nous avons mené ce projet agile, nous avons conçu la base de données (MCD, MLD, jeu de données, ...). Nous avons réalisé un dossier de conception et de spécification (diagrammes de collaboration, use case, diagramme de séquence, diagramme de classe métier, ...). Nous avons développé le projet sur Laravel 9. Nous avons également fourni un rapport sur des tests de sécurité élémentaire que nous avons réalisé. Nous avons également pour mission d'analyser les données du site en fournissant des rapports BI. La sécurité et la protection des données a également été pris en compte dans toutes les étapes du projet. Ainsi qu'une partie cryptographie.",
+            "Ce projet me permet de monter en compétences sur le framework Laravel 9. D'acquérir des compétences sur les méthodes agiles ainsi que sur toutes les étapes de la création d'un site web professionnel.",
+            "J'ai évidemment suivi et participé à toutes les étapes du développement du projet. J'ai personnellement développé entièrement et seul notamment la partie de création de compte, modification des informations du compte, gestion du panier. J'ai également en CSS réalisé le design du site.",
         ],
-        linkimage: ["projects/images/miliboo/1.png", "projects/images/miliboo/2.png", "projects/images/miliboo/3.png", "projects/images/miliboo/4.png", "projects/images/miliboo/5.png", "projects/images/miliboo/6.png", "projects/images/miliboo/7.png", "projects/images/miliboo/8.png", "projects/images/miliboo/9.png"],
+        linkimage: [
+            "projects/images/miliboo/1.png",
+            "projects/images/miliboo/2.png",
+            "projects/images/miliboo/3.png",
+            "projects/images/miliboo/4.png",
+            "projects/images/miliboo/5.png",
+            "projects/images/miliboo/6.png",
+            "projects/images/miliboo/7.png",
+            "projects/images/miliboo/8.png",
+            "projects/images/miliboo/9.png",
+        ],
         linkproject: [["Github", "https://github.com/lorrisc/miliboo"]],
     },
     {
@@ -22,7 +47,16 @@ let projectList = [
             "Il est obligatoire de localiser un post puisqu'il n'y a pas de principe d'abonnement entre utilisateur. La localisation peut être un pays, une région ou une ville. Pratique pour visualiser l'actualité proche de soit.",
             "ByLocalis est en cours de développement, le lien vers le site web et le répertoire Github seront disponibles dès le développement achevé.",
         ],
-        linkimage: ["projects/images/bylocalis/1.png", "projects/images/bylocalis/2.png", "projects/images/bylocalis/3.png", "projects/images/bylocalis/4.png", "projects/images/bylocalis/5.png", "projects/images/bylocalis/6.png", "projects/images/bylocalis/7.png", "projects/images/bylocalis/8.png"],
+        linkimage: [
+            "projects/images/bylocalis/1.png",
+            "projects/images/bylocalis/2.png",
+            "projects/images/bylocalis/3.png",
+            "projects/images/bylocalis/4.png",
+            "projects/images/bylocalis/5.png",
+            "projects/images/bylocalis/6.png",
+            "projects/images/bylocalis/7.png",
+            "projects/images/bylocalis/8.png",
+        ],
         linkproject: [],
     },
     {
