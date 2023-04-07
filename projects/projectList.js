@@ -1,5 +1,16 @@
 let projectList = [
     {
+        name: "Open Food Facts",
+        date: "Avril 2023",
+        techs: "Python, Power BI, Knime, PostgreSQL, Azure",
+        description: [
+            "Open Food Facts est une base de données de plus de 600 000 produits. Ce projet, réalisé à 4, dans le cadre de la SAÉ du semestre 4, nous devions créer la base de données (à partir du fichier plat fourni), réaliser des rapports power bi, ainsi qu'analyser et mettre en place différents modèles IA grâce à Knime.",
+            "Si nous devions retenir un mot pour décrire ce projet, ce serait \"optimisation\". En effet à chaque étape du projet, nous avons cherché à fournir la solution la plus adaptée. Typiquement, la solution finale retenue pour extraire les informations du fichier plat et les répartir dans les tables de notre base de données est un script Python. Ce script génère tous les fichiers CSV représentant les tables. Nous avons dû générer 100 ventes par produit soit plus de 60 000 000 de ventes. L'ensemble du programme est exécuté en moins de 8 minutes grâce à l'utilisation des fonctions Pandas adaptées et l'utilisation de la librairie multiprocessing."
+        ],
+        linkimage: ["projects/images/off/1.png"],
+        linkproject: [["Github", "https://github.com/lorrisc/OpenFoodFacts"]],
+    },
+    {
         name: "MonLogement",
         date: "Fin Jan. 2023 - Aujourd'hui",
         roles: "Dev, Design",

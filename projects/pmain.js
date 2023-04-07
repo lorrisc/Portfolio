@@ -26,9 +26,11 @@ projectList.forEach(function (element, index) {
     let projectDate = create("h3", dateDiv, "Date", null, null);
     let projectDateValue = create("p", dateDiv, element.date, null, null);
 
-    let roleDiv = create("div", projectInformationsSection, null, "roles", null);
-    let projectRole = create("h3", roleDiv, "Rôles", null, null);
-    let projectRoleValue = create("p", roleDiv, element.roles, null, null);
+    if (element.roles) {
+        let roleDiv = create("div", projectInformationsSection, null, "roles", null);
+        let projectRole = create("h3", roleDiv, "Rôles", null, null);
+        let projectRoleValue = create("p", roleDiv, element.roles, null, null);
+    }
 
     let techsDiv = create("div", projectInformationsSection, null, "techs", null);
     let projectTechs = create("h3", techsDiv, "Techs", null, null);
