@@ -81,9 +81,11 @@ projectForClick.forEach((element, index) => {
         let divDate = create("div", sectionInfoProject, null, "date", null);
         let dateProject = create("h3", divDate, "Date", null, null);
         let dateProjectValue = create("p", divDate, projectList[index].date, null, null);
-        let divRoles = create("div", sectionInfoProject, null, "roles", null);
-        let rolesProject = create("h3", divRoles, "Roles", null, null);
-        let rolesProjectValue = create("p", divRoles, projectList[index].roles, null, null);
+        if (element.roles) {
+            let divRoles = create("div", sectionInfoProject, null, "roles", null);
+            let rolesProject = create("h3", divRoles, "Roles", null, null);
+            let rolesProjectValue = create("p", divRoles, projectList[index].roles, null, null);
+        }
         let divTechs = create("div", sectionInfoProject, null, "techs", null);
         let techsProject = create("h3", divTechs, "Techs", null, null);
         let techsProjectValue = create("p", divTechs, projectList[index].techs, null, null);
