@@ -1,5 +1,20 @@
 let projectList = [
     {
+        name: "Clone Google Maps",
+        date: "Mai 2023",
+        techs: "JS, HTML, CSS",
+        description: [
+            "J'ai développé un clone de Google Maps sur mon temps libre en quelques jours. J'ai utilisé diverse API pour récupérer des informations sur les localisation, sur des images, des villes, ...",
+        ],
+        linkimage: [
+            "projects/images/googleMaps/1.png",
+            "projects/images/googleMaps/2.png",
+            "projects/images/googleMaps/3.png",
+            "projects/images/googleMaps/4.png",
+        ],
+        linkproject: [["Visit website", "https://lc-googlemaps.fr"],["Github", "https://github.com/lorrisc/GoogleMaps-Clone"]],
+    },
+    {
         name: "Open Food Facts",
         date: "Avril 2023",
         techs: "Python, Power BI, Knime, PostgreSQL, Azure",
