@@ -12,7 +12,7 @@ let projectList = [
             "projects/images/googleMaps/3.jpg",
             "projects/images/googleMaps/4.jpg",
         ],
-        linkproject: [["Visit website", "https://lc-googlemaps.fr"],["Github", "https://github.com/lorrisc/GoogleMaps-Clone"]],
+        linkproject: [["Visit website", "https://google-maps.lorriscrappier.fr/"],["Github", "https://github.com/lorrisc/GoogleMaps-Clone"]],
     },
     {
         name: "Open Food Facts",
