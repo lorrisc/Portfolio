@@ -27,7 +27,7 @@ let projectList = [
     },
     {
         name: "MonLogement",
-        date: "Fin Jan. 2023 - Aujourd'hui",
+        date: "Fin Jan. 2023 - Fev. 2023",
         roles: "Dev, Design",
         techs: "Laravel, phpMyAdmin, Js",
         description: [
