@@ -4,11 +4,12 @@ let projectList = [
         date: "Sept. 2023",
         techs: "Python, Grafana, PostgreSQL",
         description: [
-            "Ces tableaux de bords Grafana permettent de suivre un temps réel les aéronefs du monde entier.", "Le premier tableau de bord affiche la carte du monde avec les points représentant les aéronefs, un diagramme circulaire présente les proportions des types d'aéronefs. D'autres visuels affichent des informations sur des moyennes notamment.","Le second tableau de bord présente le suivi d'un avion en particulier que l'utilisateur choisit grâce à son code icao24. Nous pouvons donc voir ses vols sur la carte, la grosseur des points représente l'altitude de l'avion. Deux autres graphiques de type time series sont présents afin de suivre l'évolution de sa vitesse et de son altitude.","Les données sont récupérées en Python grâce à l'API qu'OpenSky Network met à disposition. Toutes les 30 secondes le programme récupère les données et les enregistre dans une base de données PostgreSQL. Grafana se connecte à cette base de données pour afficher les données.",
+            "Ces tableaux de bords Grafana permettent de suivre un temps réel les aéronefs du monde entier.", "Le premier tableau de bord affiche la carte du monde avec les points représentant les aéronefs, un diagramme circulaire présente les proportions des types d'aéronefs. D'autres visuels affichent des informations sur des moyennes notamment.","Le second tableau de bord présente le suivi d'un avion en particulier que l'utilisateur choisit grâce à son code icao24. Nous pouvons donc voir ses vols sur la carte, la grosseur des points représente l'altitude de l'avion. Deux autres graphiques de type time series sont présents afin de suivre l'évolution de sa vitesse et de son altitude. Un troisième tableau de bord est également similaire au premier mais celui-ci donne la possiblité de trier par catégorie d'avion.","Les données sont récupérées en Python grâce à l'API qu'OpenSky Network met à disposition. Toutes les 30 secondes le programme récupère les données et les enregistre dans une base de données PostgreSQL. Grafana se connecte à cette base de données pour afficher les données.",
         ],
         linkimage: [
             "projects/images/opensky/2.png",
             "projects/images/opensky/1.png",
+            "projects/images/opensky/3.png",
         ],
         linkproject: [["Github", "https://github.com/lorrisc/OpenSky"]],
     },
