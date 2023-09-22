@@ -1,5 +1,18 @@
 let projectList = [
     {
+        name: "OpenSky Network",
+        date: "Sept. 2023",
+        techs: "Python, Grafana, PostgreSQL",
+        description: [
+            "Ces tableaux de bords Grafana permettent de suivre un temps réel les aéronefs du monde entier.", "Le premier tableau de bord affiche la carte du monde avec les points représentant les aéronefs, un diagramme circulaire présente les proportions des types d'aéronefs. D'autres visuels affichent des informations sur des moyennes notamment.","Le second tableau de bord présente le suivi d'un avion en particulier que l'utilisateur choisit grâce à son code icao24. Nous pouvons donc voir ses vols sur la carte, la grosseur des points représente l'altitude de l'avion. Deux autres graphiques de type time series sont présents afin de suivre l'évolution de sa vitesse et de son altitude.","Les données sont récupérées en Python grâce à l'API qu'OpenSky Network met à disposition. Toutes les 30 secondes le programme récupère les données et les enregistre dans une base de données PostgreSQL. Grafana se connecte à cette base de données pour afficher les données.",
+        ],
+        linkimage: [
+            "projects/images/opensky/2.png",
+            "projects/images/opensky/1.png",
+        ],
+        linkproject: [["Github", "https://github.com/lorrisc/OpenSky"]],
+    },
+    {
         name: "Clone Google Maps",
         date: "Mai 2023",
         techs: "JS, HTML, CSS",
@@ -25,19 +38,19 @@ let projectList = [
         linkimage: ["projects/images/off/1.png"],
         linkproject: [["Github", "https://github.com/lorrisc/OpenFoodFacts"]],
     },
-    {
-        name: "MonLogement",
-        date: "Fin Jan. 2023 - Fev. 2023",
-        roles: "Dev, Design",
-        techs: "Laravel, phpMyAdmin, Js",
-        description: [
-            "MonLogement est un site web qui permet aux utilisateurs de rechercher et de trouver facilement des biens immobiliers en fonction de leurs besoins et de leur budget. Il offre une variété de filtres de recherche pour aider les utilisateurs à trouver le logement idéal, y compris le type de bien, le budget, la localisation et les caractéristiques du bien. Les utilisateurs peuvent également enregistrer des propriétés dans des favoris et créer des alertes pour être informés des nouvelles propriétés correspondant à leurs critères de recherche.",
-            "Les propriétaires peuvent également utiliser MonLogement pour publier leurs propriétés à louer ou à vendre et être en contact direct avec les utilisateurs intéressés. Les comptes professionnels pour les agences immobilières sont également disponibles pour une plus grande visibilité de leurs propriétés.",
-            "En cours de développement.",
-        ],
-        linkimage: ["projects/images/monlogement/1.png", "projects/images/monlogement/2.png", "projects/images/monlogement/3.png", "projects/images/monlogement/4.png", "projects/images/monlogement/5.png", "projects/images/monlogement/6.png"],
-        linkproject: [["Github", "https://github.com/lorrisc/monlogement"]],
-    },
+    // {
+    //     name: "MonLogement",
+    //     date: "Fin Jan. 2023 - Fev. 2023",
+    //     roles: "Dev, Design",
+    //     techs: "Laravel, phpMyAdmin, Js",
+    //     description: [
+    //         "MonLogement est un site web qui permet aux utilisateurs de rechercher et de trouver facilement des biens immobiliers en fonction de leurs besoins et de leur budget. Il offre une variété de filtres de recherche pour aider les utilisateurs à trouver le logement idéal, y compris le type de bien, le budget, la localisation et les caractéristiques du bien. Les utilisateurs peuvent également enregistrer des propriétés dans des favoris et créer des alertes pour être informés des nouvelles propriétés correspondant à leurs critères de recherche.",
+    //         "Les propriétaires peuvent également utiliser MonLogement pour publier leurs propriétés à louer ou à vendre et être en contact direct avec les utilisateurs intéressés. Les comptes professionnels pour les agences immobilières sont également disponibles pour une plus grande visibilité de leurs propriétés.",
+    //         "En cours de développement.",
+    //     ],
+    //     linkimage: ["projects/images/monlogement/1.png", "projects/images/monlogement/2.png", "projects/images/monlogement/3.png", "projects/images/monlogement/4.png", "projects/images/monlogement/5.png", "projects/images/monlogement/6.png"],
+    //     linkproject: [["Github", "https://github.com/lorrisc/monlogement"]],
+    // },
     {
         name: "Miliboo",
         date: "Oct. 2022 - Jan. 2023",
@@ -83,7 +96,7 @@ let projectList = [
             "projects/images/bylocalis/7.png",
             "projects/images/bylocalis/8.png",
         ],
-        linkproject: [],
+        linkproject: ["Github", "https://github.com/lorrisc/ByLocalis"],
     },
     {
         name: "TheLegoWar",
