@@ -97,7 +97,7 @@ let projectList = [
             "projects/images/bylocalis/7.png",
             "projects/images/bylocalis/8.png",
         ],
-        linkproject: ["Github", "https://github.com/lorrisc/ByLocalis"],
+        linkproject: [],
     },
     {
         name: "TheLegoWar",
